@@ -29,3 +29,14 @@ main h2 {
 #plugg {
     color:#FC7B00;
   }
+
+.card-header, .card {
+    background-color:hsl(285, 100%, 39%, 0.2);
+    border-color:hsl(285, 100%, 39%, 0.2);
+    color:white;
+    font-family: 'Poppins';
+}
+
+.logged-in {
+    color: rgba(0, 241, 0, 0.994);
+  }

@@ -14,3 +14,8 @@ nav li a {
 nav li a :active {
     text-decoration-line: underline;
 }
+
+.btn-primary {
+    background-color:#2B274D;
+    border-color:#2B274D;
+}

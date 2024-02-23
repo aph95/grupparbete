@@ -19,3 +19,8 @@ nav li a :active {
     background-color:#2B274D;
     border-color:#2B274D;
 }
+
+hr {
+    margin-top:0;
+    border: 20px solid #2b274d;
+  }

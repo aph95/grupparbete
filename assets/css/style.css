@@ -10,3 +10,7 @@
 nav li a {
     color: white !important;
 }
+
+nav li a :active {
+    text-decoration-line: underline;
+}

@@ -4,17 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- Font-Awesome Core CSS -->
     <link rel="stylesheet" href="assets/css/all.min.css">
-    <!-- General styles -->
-    <link rel="stylesheet" href="assets/css/style.css?<?php echo hash_file('md5', 'assets/css/style.css'); ?>">
+    <script src="assets/js/bootstrap.bundle.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-        <a class="navbar-brand" href="#"><i class="fa-solid fa-book"></i> <i class="fa-solid fa-horse"></i> Plugghäst</a>
+          <a class="navbar-brand" href="#"><i class="fa-solid fa-book"></i> <i class="fa-solid fa-horse"></i> Plugghäst</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -48,7 +45,19 @@
           </div>
         </div>
       </nav>
-      <!-- Javascript Bundle -->
-      <script src="assets/js/bootstrap.bundle.js"></script>
+
+
+      <div><svg viewBox="0 0 160 160">
+        <!--                  v---v--to control the curve -->
+        <path d="M150,0 C150,100 100,150 0,150"  stroke="red"  />
+      </svg>
+      <svg viewBox="0 0 160 160">
+        <path d="M150,0 C150,130 130,150 0,150"  stroke="blue" />
+      </svg>
+      <svg viewBox="0 0 160 160">
+        <path d="M150,0 C150,150 150,150 0,150"  stroke="black"/>
+      </svg>
+    </div>
+    
 </body>
 </html>

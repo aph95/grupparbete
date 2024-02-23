@@ -1,7 +1,7 @@
 .masthead {
     background-image:
     linear-gradient(90deg, rgba(255,195,59,1) 0%, rgba(185,38,55,0.6811099439775911) 44%, rgba(176,83,204,1) 100%),
-    url(/images/background.jpg);
+    url(/images/background.JPG);
     background-size: cover;
     min-height: 100vh;
     position:relative;

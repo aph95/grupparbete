@@ -1,3 +1,13 @@
 h1{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+svg {
+    width: 160px;
+  }
+  
+  path {
+    fill: none;
+    stroke-dasharray: 2, 10; /*adjust this to control the number of dots*/
+    stroke-width:2px;
+  }

@@ -41,3 +41,10 @@ main h2 {
     color: rgba(0, 241, 0);
   }
 
+.footer-background {
+background-color:#8581a3;
+}
+
+div .container a{
+  color:white;
+}

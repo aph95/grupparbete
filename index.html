@@ -171,9 +171,32 @@
       start03 = document.getElementById('box-3'),
       end03 = document.getElementById('box-4');
 
-    new LeaderLine(start01, end01, { dash: true, color: '#FC7B00' });
-    new LeaderLine(start02, end02, { dash: true, color: '#B4135F' });
-    new LeaderLine(start03, end03, { dash: true, color: '#5529A1' });
+  new LeaderLine(start01, end01, 
+  { 
+    dash: true, 
+    startPlugColor: '#FC7B00',
+    endPlugColor: '#E3283B', 
+    gradient: true, 
+    startPlug: 'none',
+    endPlug: 'behind', });
+ 
+  new LeaderLine(start02, end02, 
+  { 
+    dash: true, 
+    startPlugColor: '#E3283B',
+    endPlugColor: '#B4135F',
+    gradient: true, 
+    startPlug: 'none',
+    endPlug: 'behind', });
+  
+  new LeaderLine(start03, end03, 
+  { 
+    dash: true, 
+    startPlugColor: '#B4135F', 
+    endPlugColor: '#5529A1',
+    gradient: true, 
+    startPlug: 'none',
+    endPlug: 'behind', });
   </script>
 </body>
 

@@ -11,7 +11,7 @@ nav li a :active {
     text-decoration-line: underline;
 }
 
-.btn-primary {
+.btn {
     background-color:#2B274D;
     border-color:#2B274D;
 }
@@ -53,3 +53,17 @@ background-color:#706c8d;
 div .container a{
   color:white;
 }
+
+/*
+
+#login-btn {
+  background-color:#ACA7E6;
+  border-color:#ACA7E6;
+}
+
+#login-btn :hover {
+  background-color:#5c5979;
+  border-color:#5c5979;
+}
+
+*/

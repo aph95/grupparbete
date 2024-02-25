@@ -1,5 +1,5 @@
 h1 {
-    font-family:'Poppins'
+    font-family: "greycliff-cf", sans-serif;
 }
 
 nav li a {
@@ -23,8 +23,12 @@ nav li a :active {
   }
 
 main h2 {
-    font-family: 'Poppins';
+  font-family: "greycliff-cf", sans-serif;
   }
+
+h3 {
+  
+}
 
 #plugg {
     color:#FC7B00;

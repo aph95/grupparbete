@@ -2,8 +2,9 @@ h1 {
     font-family: "greycliff-cf", sans-serif;
 }
 
-nav li a {
+nav li a, nav a {
     color: white !important;
+    font-family: "greycliff-cf", sans-serif;
 }
 
 nav li a :active {

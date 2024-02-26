@@ -7,6 +7,10 @@ nav li a, nav a {
     font-family: "greycliff-cf", sans-serif;
 }
 
+main {
+  font-family: "greycliff-cf", sans-serif;
+}
+
 nav li a :active {
     text-decoration-line: underline;
 }
@@ -46,4 +50,8 @@ main h2 {
 
 div .container a{
   color:white;
+}
+
+footer {
+  font-family:"greycliff-cf", sans-serif;
 }

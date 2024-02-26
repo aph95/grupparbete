@@ -35,13 +35,6 @@ main h2 {
     color:#FC7B00;
   }
 
-.card-header, .card {
-    background-color:hsl(285, 100%, 39%, 0.2);
-    border-color:hsl(285, 100%, 39%, 0.2);
-    color:white;
-    font-family: 'Poppins';
-}
-
 .logged-in {
     color: rgba(0, 241, 0);
   }
@@ -53,17 +46,3 @@ background-color:#706c8d;
 div .container a{
   color:white;
 }
-
-/*
-
-#login-btn {
-  background-color:#ACA7E6;
-  border-color:#ACA7E6;
-}
-
-#login-btn :hover {
-  background-color:#5c5979;
-  border-color:#5c5979;
-}
-
-*/

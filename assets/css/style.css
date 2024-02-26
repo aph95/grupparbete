@@ -55,3 +55,7 @@ div .container a{
 footer {
   font-family:"greycliff-cf", sans-serif;
 }
+
+.max-width {
+  max-width: 300px;
+}

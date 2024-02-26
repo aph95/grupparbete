@@ -40,7 +40,8 @@ main h2 {
   }
 
 .footer-background {
-background-color:#be92a7;
+  background: rgb(176,145,228);
+  background: linear-gradient(90deg, rgba(176,145,228,1) 0%, rgba(228,118,118,1) 100%);
 }
 
 div .container a{

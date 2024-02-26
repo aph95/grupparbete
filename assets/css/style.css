@@ -59,3 +59,19 @@ footer {
 .max-width {
   max-width: 300px;
 }
+
+.divider-container {
+  position: relative;
+}
+
+.divider-container img {
+  width: 100%;
+  height: auto;
+}
+
+.divider-container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

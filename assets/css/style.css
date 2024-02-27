@@ -127,3 +127,11 @@ margin-left:-0.8rem;
   width:7.9rem;
   margin-top:1rem;
 }
+
+#login-button :hover {
+  background-color:bisque;
+}
+
+.masthead li a :hover {
+  background-color:bisque;
+}

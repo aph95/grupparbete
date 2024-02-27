@@ -23,9 +23,10 @@
       .banner {
         background-image:
           linear-gradient(90deg, rgba(255, 195, 59, 1) 0%, rgba(185, 38, 55, 0.6811099439775911) 44%, rgba(176, 83, 204, 1) 100%);
-        background-position: center;
         height: 10vh;
         position: relative;
+        display: flex;
+        justify-content: space-between;
       }
     </style>
   
@@ -39,15 +40,14 @@
 <body>
   <header>
     <div class="banner">
-      <div class="d-flex">
-
-      <a href=""><img src="images/logo.svg" height="70" alt="logo"></a>
+      <a href="pages/start.html"><img src="images/logo.svg" height="70" alt="logo"></a>
+      <div class="start-button">
       <i class="fa-solid fa-bell"></i>
-      <a class="btn btn-secondary" href="pages/index.html"><i class="fa-solid fa-right-from-bracket"></i>&nbsp;Logga
-        ut</a>
-        
-
-      </div>
+      <ul class="list-group"> 
+        <li a class="btn btn-primary btn-sm mb-2 fw-semibold" href="pages/index.html"><i class="fa-solid fa-right-from-bracket"></i>&nbsp;Logga ut</a></li>
+        <li button type="button" class="btn btn-secondary btn-sm" style="--bs-btn-padding-y: .15rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"><span class="logged-in">●</span> 859 elever online</button></li>
+      </ul>
+       </div> 
     </div>
 </header>
 

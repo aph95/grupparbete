@@ -21,6 +21,14 @@ nav li a :active {
   border-color: #2B274D;
 }
 
+.btn-primary {
+  background-color: #F7931D;
+  border-color: #F7931D;
+  color:black;
+  max-width: 6rem;
+}
+
+
 .divider {
   position: relative;
   width: 100%;

@@ -28,6 +28,19 @@ nav li a :active {
   max-width: 6rem;
 }
 
+.btn-primary:hover {
+background-color: #bf6211;
+border-color: #bf6211;
+color: black;
+}
+
+.online {
+font-size: 1rem;
+}
+
+.badge{
+  cursor: default;
+}
 
 .divider {
   position: relative;

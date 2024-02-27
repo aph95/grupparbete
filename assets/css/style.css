@@ -21,6 +21,27 @@ nav li a :active {
   border-color: #2B274D;
 }
 
+.btn-primary {
+  background-color: #F7931D;
+  border-color: #F7931D;
+  color:black;
+  max-width: 6rem;
+}
+
+.btn-primary:hover {
+background-color: #bf6211;
+border-color: #bf6211;
+color: black;
+}
+
+.online {
+font-size: 1rem;
+}
+
+.badge{
+  cursor: default;
+}
+
 .divider {
   position: relative;
   width: 100%;
@@ -75,4 +96,11 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+
+/*-----*/
+.banner {
+  color: white;
+  font-size: 1.2rem;
 }

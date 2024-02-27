@@ -38,7 +38,7 @@ color: black;
 font-size: 1rem;
 }
 
-.badge{
+.badge {
   cursor: default;
 }
 
@@ -98,9 +98,32 @@ footer {
   transform: translate(-50%, -50%);
 }
 
-
-/*-----*/
-.banner {
+#bell-notification  {
+  font-size: 1.2rem; 
   color: white;
-  font-size: 1.2rem;
+}
+
+.menu-item-text {
+  font-size:0.8rem;
+}
+
+#navbar {
+  background-color:#2B274D !important;
+}
+
+/** Temp fix **/
+
+#navbar-items {
+margin-left:-0.8rem;
+}
+
+#navbar-icons {
+  font-size:1.7rem;
+}
+
+nav .active {
+  background-color:#F7931D !important;
+  height:4rem;
+  width:7.9rem;
+  margin-top:1rem;
 }

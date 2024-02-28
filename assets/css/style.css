@@ -24,18 +24,18 @@ nav li a :active {
 .btn-primary {
   background-color: #F7931D;
   border-color: #F7931D;
-  color:black;
+  color: black;
   max-width: 6rem;
 }
 
 .btn-primary:hover {
-background-color: #bf6211;
-border-color: #bf6211;
-color: black;
+  background-color: #bf6211;
+  border-color: #bf6211;
+  color: black;
 }
 
 .online {
-font-size: 1rem;
+  font-size: 1rem;
 }
 
 .badge {
@@ -98,40 +98,40 @@ footer {
   transform: translate(-50%, -50%);
 }
 
-#bell-notification  {
-  font-size: 1.2rem; 
+#bell-notification {
+  font-size: 1.2rem;
   color: white;
 }
 
 .menu-item-text {
-  font-size:0.8rem;
+  font-size: 0.8rem;
 }
 
 #navbar {
-  background-color:#2B274D !important;
+  background-color: #2B274D !important;
 }
 
 /** Temp fix **/
 
 #navbar-items {
-margin-left:-0.8rem;
+  margin-left: -0.8rem;
 }
 
 #navbar-icons {
-  font-size:1.7rem;
+  font-size: 1.7rem;
 }
 
 #navbar-items .active {
-  background-color:#F7931D !important;
-  height:4rem;
-  width:7.9rem;
-  margin-bottom:1rem;
+  background-color: #F7931D !important;
+  height: 4rem;
+  width: 7.9rem;
+  margin-bottom: 1rem;
 }
 
 #login-button :hover {
-  background-color:bisque;
+  background-color: bisque;
 }
 
 .masthead li a :hover {
-  background-color:bisque;
+  background-color: bisque;
 }

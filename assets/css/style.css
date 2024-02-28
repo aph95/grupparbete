@@ -117,10 +117,6 @@ footer {
   margin-left: -0.8rem;
 }
 
-#navbar-icons {
-  font-size: 1.7rem;
-}
-
 #navbar-items .active {
   background-color: #F7931D !important;
   height: 4rem;
@@ -134,4 +130,17 @@ footer {
 
 .masthead li a :hover {
   background-color: bisque;
+}
+
+#right-column {
+  background-color: #1f0cc8;
+}
+
+.side-modules .list-group-item {
+  font-size:0.8rem;
+}
+
+.card-header {
+  background-color:#2B274D;
+  color:#ffff;
 }

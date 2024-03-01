@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <title>Pluggportalen</title>
+  <!-- Bootstrap libraries. -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/all.min.css">
+  <!-- Favicon. -->
+  <link rel="icon" type="image/x-icon" href="../images/logo.svg">
+  <!-- CSS stylesheet. -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- Poppins font family. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Greycliff font family. -->
+  <link rel="stylesheet" href="https://use.typekit.net/anl1bwo.css">
+  <!-- Temporary internal stylesheet. -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/leader-line.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.js"></script>
+  <script src="assets/js/back-to-top.js"></script>
+
+</head>
+
+<body class="backround-login">
+    <header>
+        <div class="d-flex justify-content-between">
+        <section class="logo-login">
+        <a href="/index.html"><img src="../images/logo.svg" height="100" alt="logo"></a>
+     </section>
+    <section class="home-login">
+    <a href="/index.html"><i class="fa-solid fa-house" style="font-size: 3rem; color: white;"></i></a>
+</section>
+</div>
+
+    </header>
+    <main>
+
+<div class="modal modal-sheet position-static d-block" tabindex="-1" role="dialog" id="modalSignin">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content rounded-4 shadow">
+          <h1 class="fw-bold">Logga in</h1>
+        <div class="modal-body p-5 pt-0">
+          <form class="">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control rounded-5" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">E-post</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control rounded-5" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Lösenord</label>
+            </div>
+            
+            <button class="w-100 mb-2 btn btn-lg rounded-5 btn-primary" type="submit"><i class="fa-solid fa-right-to-bracket me-2"></i>Logga in</button>
+            <br><p class="terms">By clicking Sign up, you agree to the terms of use.</p>
+            <hr class="my-4">
+            <h2 class="fs-5 fw-bold mb-3">eller</h2>
+            <button class="w-100 py-2 mb-2 btn btn-danger rounded-5" type="submit">
+              Registrera dig
+            </button>
+            <button class="w-100 py-2 mb-2 btn btn-secondary rounded-5" type="submit">
+              Logga in med Facebook
+            </button>
+            <button class="w-100 py-2 mb-2 btn btn-secondary rounded-5" type="submit">
+              Logga in med Google
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+    </main>
+
+
+</body>

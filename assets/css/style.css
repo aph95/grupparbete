@@ -148,3 +148,53 @@ footer {
 .banner {
   min-height: 7rem;
 }
+
+.backround-login {
+  height: 100vh;
+  background-image: linear-gradient(to left top,#3D2EB2, #B92637, #FFC33B);
+}
+
+.logo-login {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.home-login {
+  margin-top: 4rem ;
+  margin-right: 4rem;
+}
+
+.modal-body .btn-primary{
+  background-color: #ACA7E6;
+  border-color: #ACA7E6;
+  color: white;
+  max-width: 20rem;
+}
+.modal-body .btn-primary:hover{
+  transform: scale(1.03);
+}
+
+.modal-content{
+  background-color: #2B274D;
+  color: white; 
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 6rem;
+}
+.modal-content h1 {
+ margin-bottom: 2rem;
+}
+.modal-body .btn-danger{
+  background-color: #FC7B00;
+  border-color: #FC7B00;
+  color: black;
+  max-width: 20rem;
+}
+
+.modal-body .btn-secondary{
+  background-color: #F2EBEB;
+  border-color: #F2EBEB;
+  color: black;
+  max-width: 20rem;
+}

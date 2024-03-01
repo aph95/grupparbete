@@ -179,6 +179,7 @@ footer {
   min-height: 7rem;
 }
 
+/*LOG IN CSS*/
 .backround-login {
   height: 100vh;
   background-image: linear-gradient(to left top,#3D2EB2, #B92637, #FFC33B);
@@ -228,3 +229,4 @@ footer {
   color: black;
   max-width: 20rem;
 }
+/*LOG IN CSS SLUTAR HÄR*/

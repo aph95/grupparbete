@@ -34,6 +34,19 @@ nav li a :active {
   color: black;
 }
 
+.btn-info {
+  background-color: #F7931D;
+  border-color: #F7931D;
+  color: white;
+  max-width: 10rem;
+}
+
+.btn-info:hover {
+  background-color: #bf6211;
+  border-color: #bf6211;
+  color: white;
+}
+
 .online {
   font-size: 1rem;
 }

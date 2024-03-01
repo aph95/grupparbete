@@ -212,7 +212,7 @@ footer {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding-top: 6rem;
+  padding-top: 4rem;
 }
 .modal-content h1 {
  margin-bottom: 2rem;

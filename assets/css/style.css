@@ -230,4 +230,10 @@ footer {
   color: black;
   max-width: 20rem;
 }
+
+.dropdown-item{
+  color: #ACA7E6;
+  text-decoration: underline;
+}
+
 /*LOG IN CSS SLUTAR HÄR*/

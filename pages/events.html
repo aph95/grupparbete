@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
     <title>Pluggportalen</title>
-    <!-- Bootstrap libraries. -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/stilmall.css">
+
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/all.min.css">
-    <!-- Favicon. -->
-    <link rel="icon" type="image/x-icon" href="../images/logo.svg">
-    <!-- CSS stylesheet. -->
-    <link rel="stylesheet" href="../assets/css/style.css">
+
     <!-- Poppins font family. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,171 +20,259 @@
         rel="stylesheet">
     <!-- Greycliff font family. -->
     <link rel="stylesheet" href="https://use.typekit.net/anl1bwo.css">
-    <!-- Temporary internal stylesheet. -->
+
     <style>
         .banner {
-            background-image:
-                linear-gradient(90deg, rgba(255, 195, 59, 1) 0%, rgba(185, 38, 55, 0.6811099439775911) 44%, rgba(176, 83, 204, 1) 100%);
-            height: 12vh;
-            position: relative;
+            background-image: linear-gradient(90deg, rgba(255, 195, 59, 1) 0%, rgba(185, 38, 55, 1) 44%, rgba(176, 83, 204, 1) 100%);
+            position: sticky;
             display: flex;
-            justify-content: space-between;
+            min-height: 7rem;
+        }
+
+        nav {
+            min-height: 100vh;
+            width: 10vh;
+            background-color: #2b274d;
+            color: white;
+        }
+
+        nav .nav-item {
+            width: 100%;
+        }
+
+        nav .nav-link {
+            display: flex;
+            /* Use flexbox */
+            flex-direction: column;
+            /* Stack items vertically */
+            justify-content: center;
+            /* Center vertically */
+            align-items: center;
+            /* Center horizontally */
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* Spacing for icons */
+        nav .nav-link i {
+            padding: 0.5rem 0 0 0;
+        }
+
+        /* Spacing for text */
+        nav .nav-link span {
+            padding: 1rem 0 0 0;
+        }
+
+        /* Highlight color for links */
+        nav a:link {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Highlight color for active items */
+        nav .nav-link.active {
+            background-color: #F7931D !important;
+            height: 5rem;
+            width: 8rem;
+            border-top-right-radius: 10px;
+            border-end-end-radius: 10px;
+        }
+
+        /* Highlight color for hover items */
+        nav .nav-link:hover {
+            background-color: #a7b4f0;
+        }
+
+        #bell-notification {
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        .logged-in {
+            color: rgba(0, 241, 0);
+        }
+
+        nav li i,
+        span {
+            color: white;
+        }
+
+        .col-2 {
+            background-color: #DFE3F4;
+            max-width: 200px !important;
+            min-width: 200px !important;
+            width: 200px;
+        }
+
+        aside {
+            margin-left: auto;
+        }
+
+        .login-button .btn {
+            background-color: #2b274d;
+            border-color: #2b274d;
+        }
+
+        .login-button .btn:hover {
+            background-color: #4c4c53;
+            border-color: #4c4c53;
         }
     </style>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/leader-line.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.js"></script>
-    <script src="assets/js/back-to-top.js"></script>
-
 </head>
 
 <body>
-<!-- Top Banner --> 
     <header>
-        <div class="banner py-2 px-4">
-            <a href="home.html"><img src="../images/logo.svg" height="95" alt="logo"></a>
-            <i class="fa-solid fa-bell ms-auto me-4 mt-4 position-relative" id="bell-notification">
+        <!-- Logotype -->
+        <div class="">
+            <div class="banner py-2 px-4">
+                <a href="home.html">
+                    <img src="https://aph95.github.io/grupparbete/images/logo.svg" height="95" alt="logo">
+                </a>
+                <i class="fa-solid fa-bell ms-auto me-4 mt-4 position-relative" id="bell-notification">
 
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-                    style="font-size:8px;">
-                    3
-                </span>
-            </i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                        style="font-size:8px;">
+                        3
+                    </span>
+                </i>
 
-
-            <div class="d-flex flex-column mb-3">
-                <div class=""><a class="btn btn-primary btn-sm mt-3 mb-1 ms-3" href="../index.html"><i
-                            class="fa-solid fa-right-from-bracket me-1"></i>Logga ut</a></div>
-                <div class="online mt-3"><span class="badge text-bg-dark fw-light"><span
-                            class="logged-in me-1">●</span>859
-                        elever
-                        online</span></div>
+                <div class="d-flex flex-column mb-3">
+                    <div class="login-button"><a class="btn btn-primary btn-sm mt-3 mb-1 ms-3" href="../index.html"><i
+                                class="fa-solid fa-right-from-bracket me-1"></i>Logga ut</a></div>
+                    <div class="online mt-3"><span class="badge text-bg-dark fw-light"><span
+                                class="logged-in me-1">●</span>859
+                            elever
+                            online</span></div>
+                </div>
             </div>
         </div>
     </header>
-<!-- Navigation --> 
-    <nav>
-        <div class="d-flex flex-column flex-shrink-0" style="width: 6.5rem; min-height: 100vh;" id="navbar">
 
-            <ul class="nav nav-pills flex-column mt-4" id="navbar-items">
-                <li class="nav-item">
-                    <a href="home.html" class="nav-link text-white" aria-current="page">
-                        <div class="text-center">
-                            <i class="fa-solid fa-house" style="font-size: 1.7rem;"></i>
-                            <p class="menu-item-text fw-bold">Hem</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="profile.html" class="nav-link text-white">
-                        <div class="text-center">
-                            <i class="fa-solid fa-user" style="font-size: 1.7rem;"></i>
-                            <p class="menu-item-text fw-bold">Profil</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link text-white">
-                        <div class="text-center">
-                            <i class="fa-solid fa-graduation-cap" style="font-size: 1.7rem;"></i>
-                            <p class="menu-item-text fw-bold">Pluggmål</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link text-white">
-                        <div class="text-center">
-                            <i class="fa-solid fa-users-viewfinder" style="font-size: 1.7rem;"></i>
-                            <p class="menu-item-text fw-bold">Pluggrum</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link text-white">
-                        <div class="text-center">
-                            <i class="fa-solid fa-message" style="font-size: 1.7rem;"></i>
-                            <p class="menu-item-text fw-bold">Chattrum</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link text-white">
-                        <div class="text-center">
-                            <i class="fa-solid fa-book" style="font-size: 1.7rem;"></i>
-                            <p class="menu-item-text fw-bold">Resursdelning</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="events.html" class="nav-link active">
-                        <div class="text-center">
-                            <i class="fa-solid fa-star" style="font-size: 1.7rem;"></i>
-                            <p class="menu-item-text fw-bold">Evenemang</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="nav-item mt-5">
-                    <a href="#" class="nav-link text-white">
-                        <div class="text-center">
-                            <i class="fa-solid fa-question" style="font-size: 1.7rem;"></i>
-                            <p class="menu-item-text fw-bold">Hjälp</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link text-white">
-                        <div class="text-center">
-                            <i class="fa-solid fa-gear" style="font-size: 1.7rem;"></i>
-                            <p class="menu-item-text fw-bold">Inställningar</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <div class="row g-0">
 
-    <main>
-<!-- Side Modules --> 
-        <div class="side-modules">
-            <div class="position-absolute top-0 end-0 d-flex justify-content-end"
-                style="margin-top:9rem; margin-right:1rem;">
-                <div class="card" style="width: 10rem;">
-                    <div class="card-header">
+        <!-- Navigation -->
+        <nav class="col-1 sidebar" style="width:7rem;">
+            <div class="sticky-top">
+                <ul class="nav flex-column mt-4">
+                    <li class="nav-item">
+                        <a href="home.html" class="nav-link">
+                            <i class="fa-solid fa-house fa-xl"></i>
+                            <span class="fw-bold">Hem</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="profile.html" class="nav-link">
+                            <i class="fa-solid fa-user fa-xl"></i>
+                            <span class="fw-bold">Profil</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-graduation-cap fa-xl"></i>
+                            <span class="fw-bold">Pluggmål</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-users-viewfinder fa-xl"></i>
+                            <span class="fw-bold">Pluggrum</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-message fa-xl"></i>
+                            <span class="fw-bold">Chattrum</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-user fa-xl"></i>
+                            <span class="fw-bold">Resurser</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="events.html" class="nav-link active ps-0">
+                            <i class="fa-solid fa-star fa-xl"></i>
+                            <span class="fw-bold">Evenemang</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mt-4">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-question fa-xl"></i>
+                            <span class="fw-bold">Hjälp</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-gear fa-xl"></i>
+                            <span class="fw-bold">Inställningar</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main -->
+        <main class="col-8 m-5">
+            <h1>Huvudinnehåll</h1>
+            <h1>Huvudinnehåll</h1>
+            <h1>Huvudinnehåll</h1>
+            <h1>Huvudinnehåll</h1>
+            <h1>Huvudinnehåll</h1>
+            <h1>Huvudinnehåll</h1>
+            <h1>Huvudinnehåll</h1>
+            <h1>Huvudinnehåll</h1>
+            <h1>Huvudinnehåll</h1>
+            <h1>Huvudinnehåll</h1>
+            <h1>Huvudinnehåll</h1>
+            <h1>Huvudinnehåll</h1>
+            <h1>Huvudinnehåll</h1>
+            <h1>Huvudinnehåll</h1>
+            <h1>Huvudinnehåll</h1>
+            <h1>Huvudinnehåll</h1>
+            <h1>Huvudinnehåll</h1>
+            <h1>Huvudinnehåll</h1>
+            <h1>Huvudinnehåll</h1>
+            <h1>Huvudinnehåll</h1>
+            <h1>Huvudinnehåll</h1>
+        </main>
+
+        <!-- Aside -->
+        <aside class="col-2">
+            <div class="sticky-top">
+
+                <div class="card mt-4 mx-auto" style="width: 10rem;">
+                    <div class="card-header" style="background-color: #2B274D; color:white;">
                         <p class="text-center mb-1"><i class="fa-solid fa-comments me-1"></i>Vänlista</p>
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item"><span class="logged-in">●</span> Anders Svensk</li>
                         <li class="list-group-item"><span class="logged-in">●</span> Liza Sestrem</li>
-                        <li class="list-group-item text-center" style="background-color:#ACA7E6;">
-                        <i class="fa-solid fa-ellipsis" style="font-size:1.2rem; cursor:pointer;"></i></li>
+                        <li class="list-group-item text-center" style="background-color:#ACA7E6;"><i
+                                class="fa-solid fa-ellipsis" style="font-size:1.2rem; cursor:pointer;"></i></li>
                     </ul>
                 </div>
-            </div>
-            <div class="position-absolute top-0 end-0 d-flex justify-content-end"
-                style="margin-top:22rem; margin-right:1rem;">
-                <div class="card" style="width: 10rem;">
-                    <div class="card-header">
+
+                <div class="card mt-4 mx-auto" style="width: 10rem;">
+                    <div class="card-header" style="background-color: #2B274D; color:white;">
                         <p class="text-center mb-1"><i class="fa-solid fa-calendar-days me-1"></i>Kalender</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><span class="fw-bold">11/4</span> Digital spelkväll</li>
-                        <li class="list-group-item"><span class="fw-bold">27/4</span> Mindful Art</li>
+                        <li class="list-group-item"><span class="fw-bold" style="color:black;">11/4</span> Digital
+                            spelkväll</li>
+                        <li class="list-group-item"><span class="fw-bold" style="color:black;">27/4</span> Mindful Art
+                        </li>
                         <li class="list-group-item text-center" style="background-color:#ACA7E6;"><i
                                 class="fa-solid fa-pen-to-square" style="font-size:1.2rem; cursor:pointer;"></i></li>
                     </ul>
                 </div>
-            </div>
 
-            <div class="position-absolute top-0 end-0 d-flex justify-content-end"
-                style="margin-top:35rem; margin-right:1rem;">
-                <div class="card" style="width: 10rem;">
-                    <div class="card-header">
+                <div class="card mt-4 mx-auto" style="width: 10rem;">
+                    <div class="card-header" style="background-color: #2B274D; color:white;">
                         <p class="text-center mb-1"><i class="fa-solid fa-graduation-cap me-1"></i>Pluggmål</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><input class="form-check-input me-1" type="checkbox">Läsa klart
-                            kapitel 2</li>
+                        <li class="list-group-item"><input class="form-check-input me-1" type="checkbox">Läsa kap 2</li>
                         <li class="list-group-item"><input class="form-check-input me-1" type="checkbox">Förbered tenta
                         </li>
                         <li class="list-group-item"><input class="form-check-input me-1" type="checkbox">Skriv uppsats
@@ -192,233 +281,15 @@
                                 class="fa-solid fa-pen-to-square" style="font-size:1.2rem; cursor:pointer;"></i></li>
                     </ul>
                 </div>
-            </div>
-        </div>
 
-<!-- Event-section --> 
-<div class="container">
-    <div class="d-flex flex-row mt-5">
-        <h3 class="heading">Sparade evenemang</h3>
-            <div class="ms-auto"><a class="btn btn-info btn-sm mt-3 mb-1 ms-3 fw-bold" href="../index.html"><i class="fa-solid fa-plus me-2"></i>Skapa evenemang</a>
-            </div>
-    </div>
 
-    <div class="events ms-3">
-        <div class="d-flex flex-row mt-3">
-            <div class="row text-center">
-                <div class="eventimage">
-                    <img src="https://picsum.photos/300/450" class="img-fluid rounded" width="300" height="450" alt="Photo of event">
-                </div>
-                <div class="bookmark-event ms-2">
-                    <i class="fa-solid fa-bookmark fa-2x"></i>
-                </div>    
-                <div class="event-text"> 
-                    <h3 class="mb-3 fw-bold">Bokcirkel</h3>
-                </div>
-                <div class="event-button">
-                    <a class="btn btn-light btn-sm mt-3 mb-3 rounded-pill" href="#">Läs mer</a>
-                </div>
-            </div>
-    
-        <div class="row text-center">
-            <div class="eventimage">
-                <img src="https://picsum.photos/300/450" class="img-fluid rounded" width="300" height="450" alt="Photo of event">
-            </div>
-            <div class="bookmark-event">
-                <i class="fa-solid fa-bookmark fa-2x me-3"></i>
-            </div>    
-            <div class="event-text"> 
-                <h3 class="mb-3 fw-bold">Digital Spelkväll</h3>
-            </div>
-            <div class="event-button">
-                <a class="btn btn-light btn-sm mt-3 mb-3 rounded-pill" href="#">Läs mer</a>
-            </div>
-        </div>
-    
-        <div class="row text-center">
-            <div class="eventimage">
-                <img src="https://picsum.photos/300/450" class="img-fluid rounded" width="300" height="450" alt="Photo of event">
-            </div>
-            <div class="bookmark-event">
-                <i class="fa-solid fa-bookmark fa-2x ms-2"></i>
-            </div>    
-            <div class="event-text"> 
-                <h3 class="mb-3 fw-bold">Mindful Art</h3>
-            </div>
-            <div class="event-button">
-                <a class="btn btn-light btn-sm mt-3 mb-3 rounded-pill" href="#">Läs mer</a>
-            </div>
-        </div>
-    
-        <div class="row text-center">
-            <div class="eventimage ms-2">
-                <img src="https://picsum.photos/300/450" class="img-fluid rounded" width="300" height="450" alt="Photo of event">
-            </div>
-            <div class="bookmark-event">
-                <i class="fa-solid fa-bookmark fa-2x ms-4"></i>
-            </div>    
-            <div class="event-text"> 
-                <h3 class="mb-3 fw-bold">Språkcafé</h3>
-            </div>
-            <div class="event-button">
-                <a class="btn btn-light btn-sm mt-3 mb-3 rounded-pill" href="#">Läs mer</a>
-            </div>
-        </div>
-        </div>
-    </div>
 
-<div class="d-flex flex-row mt-5">
-    <h3 class="heading">Kommande evenemang</h3>
-    <div class="filter-button ms-auto">
-        <div class="d-flex me-3"><i class="fa-solid fa-caret-down me-2"></i><p>Filtrera</p></div>
-    </div> 
-</div>
 
-    <div class="events ms-3">
-        <div class="d-flex flex-row mt-3">
-            <div class="row text-center">
-                <div class="eventimage">
-                    <img src="https://picsum.photos/300/450" class="img-fluid rounded" width="300" height="450" alt="Photo of event">
-                </div>
-                <div class="bookmark-event">
-                    <i class="fa-solid fa-bookmark fa-2x"></i>
-                </div>    
-                <div class="event-text"> 
-                    <h3 class="mb-3 fw-bold">Bokcirkel</h3>
-                </div>
-                <div class="event-button">
-                    <a class="btn btn-light btn-sm mt-3 mb-3 rounded-pill" href="#">Läs mer</a>
-                </div>
-            </div>
-    
-        <div class="row text-center">
-            <div class="eventimage">
-                <img src="https://picsum.photos/300/450" class="img-fluid rounded" width="300" height="450" alt="Photo of event">
-            </div>
-            <div class="bookmark-event">
-                <i class="fa-solid fa-bookmark fa-2x"></i>
-            </div>    
-            <div class="event-text"> 
-                <h3 class="mb-3 fw-bold">Digital Spelkväll</h3>
-            </div>
-            <div class="event-button">
-                <a class="btn btn-light btn-sm mt-3 mb-3 rounded-pill" href="#">Läs mer</a>
-            </div>
-        </div>
-    
-        <div class="row text-center">
-            <div class="eventimage">
-                <img src="https://picsum.photos/300/450" class="img-fluid rounded" width="300" height="450" alt="Photo of event">
-            </div>
-            <div class="bookmark-event">
-                <i class="fa-solid fa-bookmark fa-2x"></i>
-            </div>    
-            <div class="event-text"> 
-                <h3 class="mb-3 fw-bold">Mindful Art</h3>
-            </div>
-            <div class="event-button">
-                <a class="btn btn-light btn-sm mt-3 mb-3 rounded-pill" href="#">Läs mer</a>
-            </div>
-        </div>
-    
-        <div class="row text-center">
-            <div class="eventimage ms-2">
-                <img src="https://picsum.photos/300/450" class="img-fluid rounded" width="300" height="450" alt="Photo of event">
-            </div>
-            <div class="bookmark-event">
-                <i class="fa-solid fa-bookmark fa-2x"></i>
-            </div>    
-            <div class="event-text"> 
-                <h3 class="mb-3 fw-bold">Språkcafé</h3>
-            </div>
-            <div class="event-button">
-                <a class="btn btn-light btn-sm mt-3 mb-3 rounded-pill" href="#">Läs mer</a>
-            </div>
-        </div>
-        </div>
-    </div>
-    
 
-</div> 
-
-<!-- Test section bortse från denna -->
-<section class="events" id="events">
-    <h1 class="eventheading">Kommande Evenemang</h1>
-
-    <div class="event-container">
-        <div class="event">
-            <div class="event-icon">
-                <i class="fa-solid fa-bookmark fa-2x"></i>
-                <div class="event-image">
-                    <img src="https://picsum.photos/300/450" class="img-fluid rounded" width="300" height="450" alt="Photo of event">
-                    <div class="event-text">
-                        <h3 class="mb-3 fw-bold">Språkcafé</h3>
-                        <div class="event-button">
-                            <a class="btn btn-light btn-sm mt-3 mb-3 rounded-pill" href="#">Läs mer</a>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
-        <div class="event-container">
-            <div class="event">
-                <div class="event-icon">
-                    <i class="fa-solid fa-bookmark fa-2x"></i>
-                    <div class="event-image">
-                        <img src="https://picsum.photos/300/450" class="img-fluid rounded" width="300" height="450" alt="Photo of event">
-                        <div class="event-text">
-                            <h3 class="mb-3 fw-bold">Språkcafé</h3>
-                            <div class="event-button">
-                                <a class="btn btn-light btn-sm mt-3 mb-3 rounded-pill" href="#">Läs mer</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="event-container">
-                <div class="event">
-                    <div class="event-icon">
-                        <i class="fa-solid fa-bookmark fa-2x"></i>
-                        <div class="event-image">
-                            <img src="https://picsum.photos/300/450" class="img-fluid rounded" width="300" height="450" alt="Photo of event">
-                            <div class="event-text">
-                                <h3 class="mb-3 fw-bold">Språkcafé</h3>
-                                <div class="event-button">
-                                    <a class="btn btn-light btn-sm mt-3 mb-3 rounded-pill" href="#">Läs mer</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="event-container">
-                    <div class="event">
-                        <div class="event-icon">
-                            <i class="fa-solid fa-bookmark fa-2x"></i>
-                            <div class="event-image">
-                                <img src="https://picsum.photos/300/450" class="img-fluid rounded" width="300" height="450" alt="Photo of event">
-                                <div class="event-text">
-                                    <h3 class="mb-3 fw-bold">Språkcafé</h3>
-                                    <div class="event-button">
-                                        <a class="btn btn-light btn-sm mt-3 mb-3 rounded-pill" href="#">Läs mer</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+        </aside>
 
     </div>
-</section>
-
-</div>
-
-
-    </main>
-
 </body>
-
-
-
-
 
 </html>

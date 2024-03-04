@@ -199,28 +199,25 @@ footer {
   background-color: #2B274D;
   color: #ffff;
 }
-/*Felicia test*/
-.side-modules{
-  top: 12vh;
-}
 
-.aside{
-background-color: #DFE3F4;
-width: 13rem;
-height: 88vh;
+.banner {
+  min-height: 7rem;
 }
-
-.content{
-  margin-top: 12vh;
-  margin-left: 6.5rem;
-  margin-right: 13rem;
-}
-/*Felicia test*/
 
 /*LOG IN CSS*/
 .backround-login {
   height: 100vh;
   background-image: linear-gradient(to left top,#3D2EB2, #B92637, #FFC33B);
+}
+
+.logo-login {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.home-login {
+  margin-top: 4rem ;
+  margin-right: 4rem;
 }
 
 .modal-body .btn-primary{
@@ -229,7 +226,7 @@ height: 88vh;
   color: white;
   max-width: 20rem;
 }
-.modal-body .btn:hover{
+.modal-body .btn-primary:hover{
   transform: scale(1.03);
 }
 
@@ -241,18 +238,21 @@ height: 88vh;
   text-align: center;
   padding-top: 4rem;
 }
-
+.modal-content h1 {
+ margin-bottom: 2rem;
+}
 .modal-body .btn-danger{
   background-color: #FC7B00;
   border-color: #FC7B00;
   color: black;
+  max-width: 20rem;
 }
 
 .modal-body .btn-secondary{
   background-color: #F2EBEB;
   border-color: #F2EBEB;
   color: black;
-  
+  max-width: 20rem;
 }
 
 .dropdown-item{

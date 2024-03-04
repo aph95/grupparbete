@@ -31,12 +31,8 @@
 <body class="backround-login">
     <header>
         <div class="d-flex justify-content-between">
-        <section class="logo-login">
-        <a href="/index.html"><img src="../images/logo.svg" height="100" alt="logo"></a>
-     </section>
-    <section class="home-login">
-    <a href="/index.html"><i class="fa-solid fa-house" style="font-size: 3rem; color: white;"></i></a>
-</section>
+        <a href="/index.html"><img src="../images/logo.svg" class="logo-login mt-4 ms-4" height="100" alt="logo"></a>
+    <a href="/index.html"><i class="fa-solid fa-house mt-5 me-5" style="font-size: 3rem; color: white;"></i></a>
 </div>
 
     </header>
@@ -45,30 +41,30 @@
 <div class="modal modal-sheet position-static d-block" tabindex="-1" role="dialog" id="modalSignin">
     <div class="modal-dialog" role="document">
       <div class="modal-content rounded-4 shadow">
-          <h1 class="fw-bold">Logga in</h1>
+          <h1 class="fw-bold mb-5">Logga in</h1>
         <div class="modal-body p-5 pt-0">
           <form class="">
             <div class="mb-3">
-              <label for="formGroupExampleInput" class="form-label">E-post</label>
-              <input type="text" class="form-control rounded-5" id="formGroupExampleInput" placeholder="exempel@mail.se">
+              <label for="login-email" class="form-label">E-post</label>
+              <input type="text" class="form-control rounded-5" id="login-email">
             </div>
             <div class="mb-3">
-              <label for="formGroupExampleInput2" class="form-label">Lösenord</label>
-              <input type="text" class="form-control rounded-5" id="formGroupExampleInput2" placeholder="*******">
+              <label for="login-password" class="form-label">Lösenord</label>
+              <input type="text" class="form-control rounded-5" id="login-password">
             </div>
             
-            <button class="w-100 mb-2 btn btn-lg rounded-5 btn-primary" type="submit"><i class="fa-solid fa-right-to-bracket me-2"></i>Logga in</button>
-            <br><p class="terms">By clicking Sign up, you agree to the terms of use.</p>
+            <button class="w-100 mb-3 mt-3 btn btn-lg rounded-5 btn-primary" style="max-width: 15rem;" type="submit"><i class="fa-solid fa-right-to-bracket me-2"></i>Logga in</button>
+    
             <a href="#" class="dropdown-item">Glömt lösenord?</a>
-            <hr class="my-4">
-            <h2 class="fs-5 fw-bold mb-3">eller</h2>
-            <button class="w-100 py-2 mb-2 btn btn-danger rounded-5" type="submit">
+            <hr class="my-4" style="max-width: 8rem;">  <span><h2 class="fs-5 fw-bold mb-3">eller</h2></span> <hr class="my-4" style="max-width: 8rem;"> 
+            
+            <button class="w-100 py-2 mb-2 btn btn-danger rounded-5" style="max-width: 20rem;" type="submit">
               Registrera dig
             </button>
-            <button class="w-100 py-2 mb-2 btn btn-secondary rounded-5" type="submit"><i class="fa-brands fa-facebook mx-1"></i>
+            <button class="w-100 py-2 mb-2 btn btn-secondary rounded-5" style="max-width: 20rem;" type="submit"><i class="fa-brands fa-facebook mx-1"></i>
               Logga in med Facebook
             </button>
-            <button class="w-100 py-2 mb-2 btn btn-secondary rounded-5" type="submit"><i class="fa-brands fa-google mx-1"></i>
+            <button class="w-100 py-2 mb-2 btn btn-secondary rounded-5" style="max-width: 20rem;" type="submit"><i class="fa-brands fa-google mx-1"></i>
               Logga in med Google
             </button>
           </form>

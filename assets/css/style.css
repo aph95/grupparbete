@@ -293,3 +293,32 @@ footer {
   font-size: 0.7rem;
   margin: 0;
 }
+
+/* Profile page */
+
+.profile-left h3 {
+  font-size: 1.5rem;
+}
+
+.profile-left-icons i {
+  font-size: 2rem;
+  color: black;
+}
+
+.profile-left-icons i:hover {
+  color:#F7931D;
+}
+
+.profile-right p {
+  font-size: 0.7rem;
+}
+
+.profile-left {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius:30px;
+}
+
+.profile-right {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}

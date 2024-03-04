@@ -80,7 +80,13 @@ nav li a :active {
 
 .event-text {
   color: white; 
+}
 
+.bookmark-event {
+  color: white;
+  position: relative;
+  bottom: 73%;
+  left: 35%;
 }
 
 .online {

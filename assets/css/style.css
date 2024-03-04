@@ -51,7 +51,9 @@ nav li a :active {
   background-color: #F7931D;
   border-color: #F7931D;
   color: white;
+  font-size: 1.1rem;
   width: 8rem;
+  height: 2.5rem;
   max-width: 10rem;
 }
 
@@ -65,9 +67,28 @@ nav li a :active {
   font-size: .75rem;
 }
 
-.bookmark-event {
-  color: #F7931D;
+
+.events .event-button {
+  position: relative;
+  bottom: 55%; 
 }
+
+.events .event-text {
+  position: relative;
+  bottom: 55%;
+}
+
+.event-text {
+  color: white; 
+}
+
+.bookmark-event {
+  color: white;
+  position: relative;
+  bottom: 73%;
+  left: 35%;
+}
+
 .online {
   font-size: 1rem;
 }

@@ -1,3 +1,7 @@
+body {
+  font-family: "greycliff-cf", sans-serif !important;
+}
+
 h1 {
   font-family: "greycliff-cf", sans-serif;
 }
@@ -261,3 +265,17 @@ footer {
 }
 
 /*LOG IN CSS SLUTAR HÄR*/
+
+/* Home page */
+
+.shuffle-button {
+  color: white;
+  background-color: #2B274D;
+  font-size: 5rem;
+  border-radius: 1rem;
+}
+
+.shuffle-button:hover {
+  color:rgb(255, 255, 255);
+  background-color:#FC7B00
+}

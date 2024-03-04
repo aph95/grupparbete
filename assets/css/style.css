@@ -279,3 +279,17 @@ footer {
   color:rgb(255, 255, 255);
   background-color:#FC7B00
 }
+
+.card-title {
+  font-size: .8rem;
+}
+
+.card {
+  background-color: #DFE3F4;
+}
+
+.card p {
+  margin-top: 1rem;
+  font-size: 0.7rem;
+  margin: 0;
+}

@@ -323,7 +323,6 @@ margin-top: -1.2rem;
 }
 
 .shuffle-btn-gradient {
-  /* Ensure the gradient is applied to the text */
   background: linear-gradient(90deg, rgba(255,195,59,1) 0%, rgba(185,38,55,1) 44%, rgba(176,83,204,1) 100%);
   background-clip: text;
   color: transparent;

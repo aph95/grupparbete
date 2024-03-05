@@ -94,8 +94,9 @@ nav li a :active {
 }
 
 .event-social-icons i{
-  font-size: 3rem;
+  color: #2B274D;
 }
+
 .online {
   font-size: 1rem;
 }

@@ -213,50 +213,45 @@ footer {
   min-height: 7rem;
 }
 
-/*LOG IN CSS*/
+/*LOG IN*/
 .backround-login {
   height: 100vh;
   background-image: linear-gradient(to left top,#3D2EB2, #B92637, #FFC33B);
 }
-
-.logo-login {
-  margin-top: 2rem;
-  margin-left: 2rem;
-}
-
-.home-login {
-  margin-top: 4rem ;
-  margin-right: 4rem;
-}
-
 .modal-body .btn-primary{
   background-color: #ACA7E6;
   border-color: #ACA7E6;
   color: white;
   max-width: 20rem;
 }
-.modal-body .btn-primary:hover{
+.modal-body .btn:hover{
   transform: scale(1.03);
+}
+
+.form-label{
+  font-size: 10pt;
 }
 
 .modal-content{
   background-color: #2B274D;
   color: white; 
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding-top: 4rem;
+  padding-top: 3rem;
+  width: 26rem;
+  height: 46rem;
 }
-.modal-content h1 {
- margin-bottom: 2rem;
+
+.modal-content .btn:active{
+background-color: lightgrey;
+border-color: lightgrey;
 }
+
 .modal-body .btn-danger{
   background-color: #FC7B00;
   border-color: #FC7B00;
   color: black;
   max-width: 20rem;
 }
-
 .modal-body .btn-secondary{
   background-color: #F2EBEB;
   border-color: #F2EBEB;
@@ -264,12 +259,52 @@ footer {
   max-width: 20rem;
 }
 
+.or{
+  font-size: 12pt;
+  margin-top: -0.5rem;
+}
+
 .dropdown-item{
   color: #ACA7E6;
   text-decoration: underline;
 }
 
-/*LOG IN CSS SLUTAR HÄR*/
+.foot{
+  color: white;
+  font-size: 10pt;
+  list-style: none;
+  padding-left: 30rem;
+  padding-right: 30rem;
+  display:flex;
+  justify-content: space-between
+}
+
+.foot a{
+  color: white;
+}
+
+/*Register*/
+.backround-register {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom,#3D2EB2, #B92637, #FFC33B);
+}
+
+.modal-body .btn-reg{
+  background-color: #FC7B00;
+  border-color: #FC7B00;
+  color: white;
+  max-width: 20rem;
+}
+
+.modal-body .btn-login{
+  background-color: #ACA7E6;
+  border-color: #ACA7E6;
+}
+
+.terms{
+margin-top: -1.2rem;
+}
+
 
 /* Home page */
 

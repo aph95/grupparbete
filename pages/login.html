@@ -39,38 +39,56 @@
     <main>
 
 <div class="modal modal-sheet position-static d-block" tabindex="-1" role="dialog" id="modalSignin">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog mt-0" role="document">
       <div class="modal-content rounded-4 shadow">
-          <h1 class="fw-bold mb-5">Logga in</h1>
+          <h1 class="fw-bold mb-4 text-center" style="font-size: 22pt;">Logga in</h1>
         <div class="modal-body p-5 pt-0">
           <form class="">
             <div class="mb-3">
-              <label for="login-email" class="form-label">E-post</label>
+              <label for="login-email" class="form-label ms-2">E-post</label>
               <input type="text" class="form-control rounded-5" id="login-email">
             </div>
             <div class="mb-3">
-              <label for="login-password" class="form-label">Lösenord</label>
+              <label for="login-password" class="form-label ms-2">Lösenord</label>
               <input type="text" class="form-control rounded-5" id="login-password">
             </div>
             
-            <button class="w-100 mb-3 mt-3 btn btn-lg rounded-5 btn-primary" style="max-width: 15rem;" type="submit"><i class="fa-solid fa-right-to-bracket me-2"></i>Logga in</button>
-    
-            <a href="#" class="dropdown-item">Glömt lösenord?</a>
-            <hr class="my-4" style="max-width: 8rem;">  <span><h2 class="fs-5 fw-bold mb-3">eller</h2></span> <hr class="my-4" style="max-width: 8rem;"> 
-            
-            <button class="w-100 py-2 mb-2 btn btn-danger rounded-5" style="max-width: 20rem;" type="submit">
+            <div class="mx-auto p-2" style="width: 15rem;">
+            <button class="w-100 mb-3 mt-3 btn btn-lg rounded-5 btn-primary" type="submit"><i class="fa-solid fa-right-to-bracket me-2"></i>Logga in</button>
+            </div>
+
+            <a href="#" class="dropdown-item text-center">Glömt lösenord?</a>
+
+            <div class="row mb-4">
+              <div class="col mt-5" style="border-top: 1px solid rgb(255, 255, 255);"></div>
+              <div class="col mt-5 ">
+                  <h2 class="or text-center">eller</h2>
+              </div>
+              <div class="col mt-5" style="border-top: 1px solid rgb(255, 255, 255);"></div>
+          </div>
+          
+          <div class="mx-auto p-2" style="width: 20rem;">
+            <button class="w-100 py-2 mb-3 btn btn-danger rounded-5" style="max-width: 20rem;" type="submit">
               Registrera dig
             </button>
-            <button class="w-100 py-2 mb-2 btn btn-secondary rounded-5" style="max-width: 20rem;" type="submit"><i class="fa-brands fa-facebook mx-1"></i>
+            <button class="w-100 py-2 mb-3 btn btn-secondary rounded-5" style="max-width: 20rem;" type="submit"><i class="fa-brands fa-facebook mx-1"></i>
               Logga in med Facebook
             </button>
             <button class="w-100 py-2 mb-2 btn btn-secondary rounded-5" style="max-width: 20rem;" type="submit"><i class="fa-brands fa-google mx-1"></i>
               Logga in med Google
             </button>
+          </div>
           </form>
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="foot">
+    <li>© Copyright 2024</li>
+    <li><a href="#"> Personuppgifter</a></li>
+    <li><a href="#"> Sekretesspolicy</a></li>
+    <li><a href="#"> Skicka feedback</a></li>
   </div>
   
   

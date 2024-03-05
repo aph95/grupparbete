@@ -326,8 +326,8 @@ margin-top: -1.2rem;
   font-size: .8rem;
 }
 
-.card {
-  background-color: #DFE3F4;
+.card-body {
+  background-color: #DFE3F4
 }
 
 .card p {

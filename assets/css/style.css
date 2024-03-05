@@ -40,7 +40,7 @@ nav li a :active {
 
 .btn-info {
   background-color: #F7931D !important;
-  border-color: #F7931D;
+  border-color: #F7931D !important;
   color: white;
   max-width: 10rem;
 }
@@ -52,8 +52,8 @@ nav li a :active {
 }
 
 .btn-light {
-  background-color: #F7931D;
-  border-color: #F7931D;
+  background-color: #F7931D !important;
+  border-color: #F7931D !important;
   color: white;
   font-size: 1.1rem;
   width: 8rem;
@@ -74,12 +74,13 @@ nav li a :active {
 
 .events .event-button {
   position: relative;
-  bottom: 55%; 
+  bottom: 50%;   
 }
+
 
 .events .event-text {
   position: relative;
-  bottom: 55%;
+  bottom: 50%;
 }
 
 .event-text {

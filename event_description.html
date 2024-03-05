@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pluggportalen</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- CSS stylesheet -->
+    <link rel="../assets/css/style.css">
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+
+    <!-- Poppins font family. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Greycliff font family. -->
+    <link rel="stylesheet" href="https://use.typekit.net/anl1bwo.css">
+
+    <style>
+        .banner {
+            background-image: linear-gradient(90deg, rgba(255, 195, 59, 1) 0%, rgba(185, 38, 55, 1) 44%, rgba(176, 83, 204, 1) 100%);
+            position: sticky;
+            display: flex;
+            min-height: 7rem;
+        }
+
+        nav {
+            min-height: 100vh;
+            width: 10vh;
+            background-color: #2b274d;
+            color: white;
+        }
+
+        nav .nav-item {
+            width: 100%;
+        }
+
+        nav .nav-link {
+            display: flex;
+            /* Use flexbox */
+            flex-direction: column;
+            /* Stack items vertically */
+            justify-content: center;
+            /* Center vertically */
+            align-items: center;
+            /* Center horizontally */
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* Spacing for icons */
+        nav .nav-link i {
+            padding: 0.5rem 0 0 0;
+        }
+
+        /* Spacing for text */
+        nav .nav-link span {
+            padding: 1rem 0 0 0;
+        }
+
+        /* Highlight color for links */
+        nav a:link {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Highlight color for active items */
+        nav .nav-link.active {
+            background-color: #F7931D !important;
+            height: 5rem;
+            width: 8rem;
+            border-top-right-radius: 10px;
+            border-end-end-radius: 10px;
+        }
+
+        /* Highlight color for hover items */
+        nav .nav-link:hover {
+            background-color: #a7b4f0;
+        }
+
+        #bell-notification {
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        .logged-in {
+            color: rgba(0, 241, 0);
+        }
+
+        nav li i,
+        span {
+            color: white;
+        }
+
+        .col-2 {
+            background-color: #DFE3F4;
+            max-width: 200px !important;
+            min-width: 200px !important;
+            width: 200px;
+        }
+
+        aside {
+            margin-left: auto;
+        }
+
+        .login-button .btn {
+            background-color: #2b274d;
+            border-color: #2b274d;
+        }
+
+        .login-button .btn:hover {
+            background-color: #4c4c53;
+            border-color: #4c4c53;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Logotype -->
+        <div class="">
+            <div class="banner py-2 px-4">
+                <a href="home.html">
+                    <img src="https://aph95.github.io/grupparbete/images/logo.svg" height="95" alt="logo">
+                </a>
+                <i class="fa-solid fa-bell ms-auto me-4 mt-4 position-relative" id="bell-notification">
+
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                        style="font-size:8px;">
+                        3
+                    </span>
+                </i>
+
+                <div class="d-flex flex-column mb-3">
+                    <div class="login-button"><a class="btn btn-primary btn-sm mt-3 mb-1 ms-3" href="../index.html"><i
+                                class="fa-solid fa-right-from-bracket me-1"></i>Logga ut</a></div>
+                    <div class="online mt-3"><span class="badge text-bg-dark fw-light"><span
+                                class="logged-in me-1">●</span>859
+                            elever
+                            online</span></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="row g-0">
+
+        <!-- Navigation -->
+        <nav class="col-1 sidebar" style="width:7rem;">
+            <div class="sticky-top">
+                <ul class="nav flex-column mt-4">
+                    <li class="nav-item">
+                        <a href="home.html" class="nav-link">
+                            <i class="fa-solid fa-house fa-xl"></i>
+                            <span class="fw-bold">Hem</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="profile.html" class="nav-link">
+                            <i class="fa-solid fa-user fa-xl"></i>
+                            <span class="fw-bold">Profil</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-graduation-cap fa-xl"></i>
+                            <span class="fw-bold">Pluggmål</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-users-viewfinder fa-xl"></i>
+                            <span class="fw-bold">Pluggrum</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-message fa-xl"></i>
+                            <span class="fw-bold">Chattrum</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-user fa-xl"></i>
+                            <span class="fw-bold">Resurser</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="events.html" class="nav-link active ps-0">
+                            <i class="fa-solid fa-star fa-xl"></i>
+                            <span class="fw-bold">Evenemang</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mt-4">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-question fa-xl"></i>
+                            <span class="fw-bold">Hjälp</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-gear fa-xl"></i>
+                            <span class="fw-bold">Inställningar</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main -->
+        <main class="col-8 m-5">
+            <div class="d-flex mt-5">
+                <a href="#"><i class="fa-solid fa-chevron-left mt-2 me-3"></i></a>
+                <h3 class="heading">Evenemang</h3>
+                <div class="ms-auto"><a class="btn btn-info btn-sm mt-3 fw-bold" href="#"><i class="fa-regular fa-bookmark me-2"></i>Lägg till i kalender</a>
+                </div>
+            </div>
+            
+        </main>
+
+        <!-- Aside -->
+        <aside class="col-2">
+            <div class="sticky-top">
+
+                <div class="card mt-4 mx-auto" style="width: 10rem;">
+                    <div class="card-header" style="background-color: #2B274D; color:white;">
+                        <p class="text-center mb-1"><i class="fa-solid fa-comments me-1"></i>Vänlista</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><span class="logged-in">●</span> Anders Svensk</li>
+                        <li class="list-group-item"><span class="logged-in">●</span> Liza Sestrem</li>
+                        <li class="list-group-item text-center" style="background-color:#ACA7E6;"><i
+                                class="fa-solid fa-ellipsis" style="font-size:1.2rem; cursor:pointer;"></i></li>
+                    </ul>
+                </div>
+
+                <div class="card mt-4 mx-auto" style="width: 10rem;">
+                    <div class="card-header" style="background-color: #2B274D; color:white;">
+                        <p class="text-center mb-1"><i class="fa-solid fa-calendar-days me-1"></i>Kalender</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><span class="fw-bold" style="color:black;">11/4</span> Digital
+                            spelkväll</li>
+                        <li class="list-group-item"><span class="fw-bold" style="color:black;">27/4</span> Mindful Art
+                        </li>
+                        <li class="list-group-item text-center" style="background-color:#ACA7E6;"><i
+                                class="fa-solid fa-pen-to-square" style="font-size:1.2rem; cursor:pointer;"></i></li>
+                    </ul>
+                </div>
+
+                <div class="card mt-4 mx-auto" style="width: 10rem;">
+                    <div class="card-header" style="background-color: #2B274D; color:white;">
+                        <p class="text-center mb-1"><i class="fa-solid fa-graduation-cap me-1"></i>Pluggmål</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><input class="form-check-input me-1" type="checkbox">Läsa kap 2</li>
+                        <li class="list-group-item"><input class="form-check-input me-1" type="checkbox">Förbered tenta
+                        </li>
+                        <li class="list-group-item"><input class="form-check-input me-1" type="checkbox">Skriv uppsats
+                        </li>
+                        <li class="list-group-item text-center" style="background-color:#ACA7E6;"><i
+                                class="fa-solid fa-pen-to-square" style="font-size:1.2rem; cursor:pointer;"></i></li>
+                    </ul>
+                </div>
+
+
+
+
+
+            </div>
+        </aside>
+
+    </div>
+</body>
+
+</html>

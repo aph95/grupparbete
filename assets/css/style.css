@@ -278,6 +278,8 @@ footer {
   background-color: #2B274D;
   font-size: 5rem;
   border-radius: 1rem;
+  max-width:10rem;
+  margin:auto;
 }
 
 .shuffle-button:hover {

@@ -291,8 +291,8 @@ footer {
   font-size: .8rem;
 }
 
-.card {
-  background-color: #DFE3F4;
+.card-body {
+  background-color: #DFE3F4
 }
 
 .card p {

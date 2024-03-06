@@ -385,12 +385,10 @@ margin-top: -1rem;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   background: linear-gradient(to right bottom, #4f40be, #ACA7E6, #cad0eb);
-
 }
 
 .profile-left-icons i {
   font-size: 2rem;
-  color: black;
   margin-top: 1rem;
 }
 
@@ -414,21 +412,18 @@ margin-top: -1rem;
   background-color: #DFE3F4;
 }
 
-.profile-right hr {
-  color: white;
-  height: 10px;
-}
-
 .profile-right p {
   font-size: 0.9rem;
   max-width: 24rem;
 }
 
-.fa-briefcase,
-.fa-heart,
 .fa-location-dot,
 .fa-graduation-cap {
   pointer-events: none;
+}
+
+.profile-left .info{
+  line-height: 1rem;
 }
 
 /* Edit profile */
@@ -445,3 +440,5 @@ margin-top: -1rem;
   background-color: #DFE3F4;
 
 }
+
+

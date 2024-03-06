@@ -309,7 +309,7 @@ footer {
 }
 
 /* pop up */
-.erase{
+.erase {
   background-color: #B92637;
   border-color: #B92637;
   color: white;
@@ -317,28 +317,29 @@ footer {
 
 .pop {
   background-color: #2B274D;
-  color: white; 
+  color: white;
   max-height: 19rem;
   max-width: 18rem;
 }
 
-.modal-header , .modal-footer{
-border: 0px;
-display: flex;
+.modal-header,
+.modal-footer {
+  border: 0px;
+  display: flex;
   justify-content: center;
   color: #C9D5FB;
 }
 
-.check{
+.check {
   background-color: #42BC5E;
   border-color: #42BC5E;
-  
+
 }
 
-.cancel{
-background-color: #403E54;
-border-color:#403E54;
-margin-top: -1rem;
+.cancel {
+  background-color: #403E54;
+  border-color: #403E54;
+  margin-top: -1rem;
 }
 
 
@@ -414,15 +415,17 @@ margin-top: -1rem;
 
 .profile-right p {
   font-size: 0.9rem;
-  max-width: 24rem;
+  max-width: 20rem;
 }
 
 .fa-location-dot,
-.fa-graduation-cap {
+.fa-graduation-cap,
+.fa-heart,
+.fa-briefcase {
   pointer-events: none;
 }
 
-.profile-left .info{
+.profile-left .info {
   line-height: 1rem;
 }
 
@@ -440,5 +443,3 @@ margin-top: -1rem;
   background-color: #DFE3F4;
 
 }
-
-

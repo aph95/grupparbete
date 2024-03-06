@@ -246,7 +246,7 @@ background-color: lightgrey;
 border-color: lightgrey;
 }
 
-.modal-body .btn-danger{
+.modal-body .btn-warning{
   background-color: #FC7B00;
   border-color: #FC7B00;
   color: black;
@@ -303,6 +303,39 @@ border-color: lightgrey;
 
 .terms{
 margin-top: -1.2rem;
+}
+
+/* pop up */
+.erase{
+  background-color: #B92637;
+  border-color: #B92637;
+  color: white;
+}
+
+.pop {
+  background-color: #2B274D;
+  color: white; 
+  max-height: 19rem;
+  max-width: 18rem;
+}
+
+.modal-header , .modal-footer{
+border: 0px;
+display: flex;
+  justify-content: center;
+  color: #C9D5FB;
+}
+
+.check{
+  background-color: #42BC5E;
+  border-color: #42BC5E;
+  
+}
+
+.cancel{
+background-color: #403E54;
+border-color:#403E54;
+margin-top: -1rem;
 }
 
 

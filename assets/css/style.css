@@ -74,7 +74,7 @@ nav li a :active {
 
 .events .event-button {
   position: relative;
-  bottom: 50%;   
+  bottom: 50%;
 }
 
 
@@ -84,7 +84,7 @@ nav li a :active {
 }
 
 .event-text {
-  color: white; 
+  color: white;
 }
 
 .bookmark-event {
@@ -94,7 +94,7 @@ nav li a :active {
   left: 35%;
 }
 
-.event-social-icons i{
+.event-social-icons i {
   color: #2B274D;
 }
 
@@ -216,93 +216,96 @@ footer {
 /*LOG IN*/
 .backround-login {
   height: 100vh;
-  background-image: linear-gradient(to left top,#3D2EB2, #B92637, #FFC33B);
+  background-image: linear-gradient(to left top, #3D2EB2, #B92637, #FFC33B);
 }
-.modal-body .btn-primary{
+
+.modal-body .btn-primary {
   background-color: #ACA7E6;
   border-color: #ACA7E6;
   color: white;
   max-width: 20rem;
 }
-.modal-body .btn:hover{
+
+.modal-body .btn:hover {
   transform: scale(1.03);
 }
 
-.form-label{
+.form-label {
   font-size: 10pt;
 }
 
-.modal-content{
+.modal-content {
   background-color: #2B274D;
-  color: white; 
+  color: white;
   display: flex;
   padding-top: 3rem;
   width: 26rem;
   height: 46rem;
 }
 
-.modal-content .btn:active{
-background-color: lightgrey;
-border-color: lightgrey;
+.modal-content .btn:active {
+  background-color: lightgrey;
+  border-color: lightgrey;
 }
 
-.modal-body .btn-warning{
+.modal-body .btn-danger {
   background-color: #FC7B00;
   border-color: #FC7B00;
   color: black;
   max-width: 20rem;
 }
-.modal-body .btn-secondary{
+
+.modal-body .btn-secondary {
   background-color: #F2EBEB;
   border-color: #F2EBEB;
   color: black;
   max-width: 20rem;
 }
 
-.or{
+.or {
   font-size: 12pt;
   margin-top: -0.5rem;
 }
 
-.dropdown-item{
+.dropdown-item {
   color: #ACA7E6;
   text-decoration: underline;
 }
 
-.foot{
+.foot {
   color: white;
   font-size: 10pt;
   list-style: none;
   padding-left: 30rem;
   padding-right: 30rem;
-  display:flex;
+  display: flex;
   justify-content: space-between
 }
 
-.foot a{
+.foot a {
   color: white;
 }
 
 /*Register*/
 .backround-register {
   height: 100vh;
-  background-image: linear-gradient(to right bottom,#3D2EB2, #B92637, #FFC33B);
+  background-image: linear-gradient(to right bottom, #3D2EB2, #B92637, #FFC33B);
 }
 
-.modal-body .btn-reg{
+.modal-body .btn-reg {
   background-color: #FC7B00;
   border-color: #FC7B00;
   color: white;
   max-width: 20rem;
 }
 
-.modal-body .btn-login{
+.modal-body .btn-login {
   background-color: #ACA7E6;
   border-color: #ACA7E6;
 }
 
-.terms{
-margin-top: -1.2rem;
+.terms {
+  margin-top: -1.2rem;
 }
 
 /* pop up */
@@ -346,17 +349,17 @@ margin-top: -1rem;
   background-color: #2B274D;
   font-size: 5rem;
   border-radius: 1rem;
-  max-width:10rem;
-  margin:auto;
+  max-width: 10rem;
+  margin: auto;
 }
 
 .shuffle-button:hover {
-  color:rgb(255, 255, 255);
-  background-color:#a7b4f0;
+  color: rgb(255, 255, 255);
+  background-color: #a7b4f0;
 }
 
 .shuffle-btn-gradient {
-  background: linear-gradient(90deg, rgba(255,195,59,1) 0%, rgba(185,38,55,1) 44%, rgba(176,83,204,1) 100%);
+  background: linear-gradient(90deg, rgba(255, 195, 59, 1) 0%, rgba(185, 38, 55, 1) 44%, rgba(176, 83, 204, 1) 100%);
   background-clip: text;
   color: transparent;
   padding: 5px;
@@ -376,31 +379,124 @@ margin-top: -1rem;
   margin: 0;
 }
 
-/* Profile page */
+/* Profile */
 
-.profile-left h3 {
-  font-size: 1.5rem;
+.profile-left {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background: linear-gradient(to right bottom, #4f40be, #ACA7E6, #cad0eb);
+
 }
 
 .profile-left-icons i {
   font-size: 2rem;
   color: black;
+  margin-top: 1rem;
 }
 
 .profile-left-icons i:hover {
-  color:#F7931D;
+  color: #F7931D;
 }
 
-.profile-right p {
-  font-size: 0.7rem;
+.profile-left i,
+.profile-right i {
+  color: black;
 }
 
-.profile-left {
-  border-top-left-radius: 30px;
-  border-bottom-left-radius:30px;
+.profile-left i:hover,
+.profile-right i:hover {
+  color: #F7931D;
 }
 
 .profile-right {
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #DFE3F4;
+}
+
+.profile-right hr {
+  color: white;
+  height: 10px;
+}
+
+.profile-right p {
+  font-size: 0.9rem;
+}
+
+.fa-briefcase,
+.fa-heart,
+.fa-location-dot,
+.fa-graduation-cap {
+  pointer-events: none;
+}
+
+/* Edit profile */
+
+.edit-profile-left {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #a7b4f0;
+}
+
+.edit-profile-right {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #DFE3F4;
+
+}
+
+.edit-profile-left .fa-check,
+.edit-profile-right .fa-check {
+  height: 30px;
+  width: 30px;
+  font-size: 15px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 30px;
+  background-color: rgb(48, 179, 48);
+}
+
+.edit-profile-left .fa-xmark,
+.edit-profile-right .fa-xmark {
+  height: 30px;
+  width: 30px;
+  font-size: 15px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 30px;
+  background-color: black;
+}
+
+.edit-profile-left-icons i {
+  font-size: 1rem;
+  color: black;
+  margin-top: 1rem;
+}
+
+.edit-profile-left-icons :hover {
+  pointer-events: none;
+}
+
+.edit-profile-left .btn-light {
+  padding: 0;
+  margin-top: 1rem;
+  font-size: 0.7rem;
+  background-color: #2B274D;
+  color: white;
+  border: none;
+  height: 2rem;
+}
+
+.edit-profile-left .btn-light:hover {
+  background-color: #F7931D;
+}
+
+.edit-profile-left .fa-xmark:hover,
+.fa-xmark:hover {
+  background-color: #F7931D;
+}
+
+.edit-profile-left .fa-check:hover,
+.fa-check:hover {
+  background-color: #F7931D;
 }

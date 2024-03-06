@@ -388,6 +388,7 @@ footer {
 
 .profile-right p {
   font-size: 0.9rem;
+  max-width: 24rem;
 }
 
 .fa-briefcase,
@@ -410,60 +411,4 @@ footer {
   border-bottom-right-radius: 20px;
   background-color: #DFE3F4;
 
-}
-
-.edit-profile-left .fa-check,
-.edit-profile-right .fa-check {
-  height: 30px;
-  width: 30px;
-  font-size: 15px;
-  text-align: center;
-  line-height: 30px;
-  border-radius: 30px;
-  background-color: rgb(48, 179, 48);
-}
-
-.edit-profile-left .fa-xmark,
-.edit-profile-right .fa-xmark {
-  height: 30px;
-  width: 30px;
-  font-size: 15px;
-  text-align: center;
-  line-height: 30px;
-  border-radius: 30px;
-  background-color: black;
-}
-
-.edit-profile-left-icons i {
-  font-size: 1rem;
-  color: black;
-  margin-top: 1rem;
-}
-
-.edit-profile-left-icons :hover {
-  pointer-events: none;
-}
-
-.edit-profile-left .btn-light {
-  padding: 0;
-  margin-top: 1rem;
-  font-size: 0.7rem;
-  background-color: #2B274D;
-  color: white;
-  border: none;
-  height: 2rem;
-}
-
-.edit-profile-left .btn-light:hover {
-  background-color: #F7931D;
-}
-
-.edit-profile-left .fa-xmark:hover,
-.fa-xmark:hover {
-  background-color: #F7931D;
-}
-
-.edit-profile-left .fa-check:hover,
-.fa-check:hover {
-  background-color: #F7931D;
 }

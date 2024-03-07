@@ -22,113 +22,10 @@
         rel="stylesheet">
     <!-- Greycliff font family. -->
     <link rel="stylesheet" href="https://use.typekit.net/anl1bwo.css">
-
-    <style>
-        .banner {
-            background-image: linear-gradient(90deg, rgba(255, 195, 59, 1) 0%, rgba(185, 38, 55, 1) 44%, rgba(176, 83, 204, 1) 100%);
-            position: sticky;
-            display: flex;
-            min-height: 7rem;
-        }
-
-        nav {
-            min-height: 100vh;
-            width: 10vh;
-            background-color: #2b274d;
-            color: white;
-        }
-
-        nav .nav-item {
-            width: 100%;
-        }
-
-        nav .nav-link {
-            display: flex;
-            /* Use flexbox */
-            flex-direction: column;
-            /* Stack items vertically */
-            justify-content: center;
-            /* Center vertically */
-            align-items: center;
-            /* Center horizontally */
-            padding: 1rem;
-            text-align: center;
-        }
-
-        /* Spacing for icons */
-        nav .nav-link i {
-            padding: 0.5rem 0 0 0;
-        }
-
-        /* Spacing for text */
-        nav .nav-link span {
-            padding: 1rem 0 0 0;
-        }
-
-        /* Highlight color for links */
-        nav a:link {
-            color: white;
-            text-decoration: none;
-        }
-
-        /* Highlight color for active items */
-        nav .nav-link.active {
-            background-color: #F7931D !important;
-            height: 5rem;
-            width: 8rem;
-            border-top-right-radius: 10px;
-            border-end-end-radius: 10px;
-        }
-
-        /* Highlight color for hover items */
-        nav .nav-link:hover {
-            background-color: #a7b4f0;
-        }
-
-        #bell-notification {
-            font-size: 1.2rem;
-            color: white;
-        }
-
-        .logged-in {
-            color: rgba(0, 241, 0);
-        }
-
-        nav li i,
-        span {
-            color: white;
-        }
-
-        .col-2 {
-            background-color: #DFE3F4;
-            max-width: 200px !important;
-            min-width: 200px !important;
-            width: 200px;
-        }
-
-        aside {
-            margin-left: auto;
-        }
-
-        .login-button .btn {
-            background-color: #2b274d;
-            border-color: #2b274d;
-        }
-
-        .login-button .btn:hover {
-            background-color: #4c4c53;
-            border-color: #4c4c53;
-        }
-
-        main {
-            background-color:#FAF9F6;
-        }
-    </style>
 </head>
 
-<body>
+<body class="body-logged-in-bg">
     <header>
-        <!-- Logotype -->
         <div>
             <div class="banner py-2 px-4">
                 <a href="home.html">
@@ -146,7 +43,7 @@
                     <div class="login-button"><a class="btn btn-primary btn-sm mt-3 mb-1 ms-3" href="../index.html"><i
                                 class="fa-solid fa-right-from-bracket me-1"></i>Logga ut</a></div>
                     <div class="online mt-3"><span class="badge text-bg-dark fw-light"><span
-                                class="logged-in me-1">●</span>859
+                                class="logged-in-ellipsis me-1">●</span>859
                             elever
                             online</span></div>
                 </div>
@@ -157,7 +54,7 @@
     <div class="row g-0">
 
         <!-- Navigation -->
-        <nav class="col-1 sidebar" style="width:7rem;">
+        <nav class="navbar-logged-in col-1 sidebar" style="width:7rem;">
             <div class="sticky-top">
                 <ul class="nav flex-column mt-4">
                     <li class="nav-item">
@@ -422,7 +319,7 @@
         </main>
 
         <!-- Aside -->
-        <aside class="col-2">
+        <aside class="aside-logged-in col-2">
             <div class="sticky-top">
 
                 <div class="card mt-4 mx-auto" style="width: 10rem;">

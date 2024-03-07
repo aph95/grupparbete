@@ -22,18 +22,19 @@ nav li a :active {
   text-decoration-line: underline;
 }
 
-#login-btn i, span {
-  color:black;
+#login-btn i,
+span {
+  color: black;
 }
 
 #login-btn {
-  background-color:#ACA7E6;
-  border-color:#ACA7E6;
+  background-color: #ACA7E6;
+  border-color: #ACA7E6;
 }
 
 #login-btn:hover {
-  background-color:#8682b6;
-  border-color:#8682b6;
+  background-color: #8682b6;
+  border-color: #8682b6;
 }
 
 .btn {
@@ -48,7 +49,8 @@ nav li a :active {
   max-width: 6rem;
 }
 
-.btn-primary, #register-btn:hover {
+.btn-primary,
+#register-btn:hover {
   background-color: #F7931D;
   border-color: #F7931D;
   color: black;
@@ -150,7 +152,7 @@ footer {
 }
 
 .modal-content .btn:active {
-  background-color:#C9D5FB;
+  background-color: #C9D5FB;
   border-color: #C9D5FB;
 }
 
@@ -216,7 +218,7 @@ footer {
   color: white;
 }
 
-.erase:hover{
+.erase:hover {
   background-color: #771924;
   border-color: #771924;
 }
@@ -253,6 +255,107 @@ footer {
   margin-top: -1rem;
 }
 
+/* Banner, navbar & sidebar */
+
+.banner {
+  background-image: linear-gradient(90deg, rgba(255, 195, 59, 1) 0%, rgba(185, 38, 55, 1) 44%, rgba(176, 83, 204, 1) 100%);
+  position: sticky;
+  display: flex;
+  min-height: 7rem;
+}
+
+.navbar-logged-in {
+  min-height: 100vh;
+  width: 10vh;
+  background-color: #2b274d;
+  color: white;
+}
+
+.navbar-logged-in .nav-item {
+  width: 100%;
+}
+
+.navbar-logged-in .nav-link {
+  display: flex;
+  /* Use flexbox */
+  flex-direction: column;
+  /* Stack items vertically */
+  justify-content: center;
+  /* Center vertically */
+  align-items: center;
+  /* Center horizontally */
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Spacing for icons */
+.navbar-logged-in .nav-link i {
+  padding: 0.5rem 0 0 0;
+}
+
+/* Spacing for text */
+.navbar-logged-in .nav-link span {
+  padding: 1rem 0 0 0;
+}
+
+/* Highlight color for links */
+.navbar-logged-in a:link {
+  color: white;
+  text-decoration: none;
+}
+
+/* Highlight color for active items */
+.navbar-logged-in .nav-link.active {
+  background-color: #F7931D !important;
+  height: 5rem;
+  width: 8rem;
+  border-top-right-radius: 10px;
+  border-end-end-radius: 10px;
+}
+
+/* Highlight color for hover items */
+.navbar-logged-in .nav-link:hover {
+  background-color: #a7b4f0;
+}
+
+#bell-notification {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.logged-in-ellipsis {
+  color: rgba(0, 241, 0);
+}
+
+.navbar-logged-in li i,
+span {
+  color: white;
+}
+
+.col-2 {
+  background-color: #DFE3F4;
+  max-width: 200px !important;
+  min-width: 200px !important;
+  width: 200px;
+}
+
+.aside-logged-in {
+  margin-left: auto;
+}
+
+.login-button .btn {
+  background-color: #2b274d;
+  border-color: #2b274d;
+}
+
+.login-button .btn:hover {
+  background-color: #4c4c53;
+  border-color: #4c4c53;
+}
+
+.body-logged-in-bg {
+  background-color: #FAF9F6;
+}
 
 /* Home page */
 
@@ -419,4 +522,3 @@ footer {
 .next-button {
   margin-top: 8rem;
 }
-

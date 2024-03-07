@@ -32,6 +32,10 @@
       height: 500px;
       position: relative;
     }
+
+    body {
+      background-color: #FAF9F6;
+    }
   </style>
 
 </head>
@@ -50,22 +54,29 @@
             <a class="nav-link active" href="">Om oss</a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-secondary" href="login.html"><i class="fa-solid fa-right-to-bracket"></i>&nbsp;Logga
-              in</a>
+            <a class="btn btn-secondary" href="pages/login.html" id="login-btn"><i
+                class="fa-solid fa-right-to-bracket pe-2"></i><span>Logga
+                in</span></a>
           </li>
         </ul>
       </nav>
 
       <div class="p-5 ms-5" id="jumbotron">
-        <a href="../index.html"><img src="../images/logo.svg" height="150" alt="logo"></a>
+        <a href=""><img src="../images/logo.svg" height="150" alt="logo"></a>
         <h1 class="display-5 fw-bold text-white">Pluggportalen</h1>
         <p class="col-md-8 fs-4 text-white">Gör studierna till en gemensam resa!</p>
-        <a class="btn btn-secondary btn-lg" href="register.html">Registrera dig</a>
-        <br>
-        <br>
-
-        <button type="button" class="btn btn-sm btn-danger" disabled><span class="logged-in">●</span> 859 elever
-          online</button>
+        <div class="row">
+          <div class="col mb-4">
+            <a class="btn btn-secondary btn-lg text-white" href="pages/register.html" id="register-btn">Registrera
+              dig</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-sm btn-danger" disabled><span class="logged-in">●</span> 859 elever
+              online</button>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -73,47 +84,47 @@
   <div class="divider"></div>
 
   <main>
-    <h2 class="text-center fs-1 fw-bold lh-1 py-5">Trevligt att träffas!</h2>
+    <h1 class="text-center fs-1 fw-bold lh-1 p-5">Trevligt att träffas!</h1>
+    <h2 class="text-center fw-bold mb-5">Vår vision är kamratskap</h2>
 
-    <div class="container pb-4">
+    <div class="text-center">
+      <img src="../images/about_illustration.svg" style="width:20rem;" alt="illustration">
+    </div>
 
-      <h3 class="fw-bold">Vårt kall</h3>
-      <p class="pb-3">Vi är inte bara en studieplattform; vi är din guide till framgång. På Pluggportalen handlar allt
-        om
-        att
-        hitta din perfekta pluggpartner för att tillsammans erövra studielivet. Vi tror på kraften i samarbete och
-        gemenskap för att uppnå dina studiemål. Med oss kan du förvandla studierna från en ensam kamp till en spännande
-        resa mot framgång tillsammans med likasinnade.</p>
+    <div class="container p-5">
 
-      <h3 class="fw-bold">Vårt löfte</h3>
-      <p class="pb-3">Att erbjuda en plattform där du kan hitta och matchas med din perfekta studiepartner för att
-        maximera
-        din inlärningspotential.</p>
+      <div class="row">
+        <div class="col">
+          <h5 class="fw-bold">Vårt kall</h5>
+          <p class="pb-3">Vi är inte bara en studieplattform; vi är din guide till framgång. På Pluggportalen handlar
+            allt
+            om
+            att
+            hitta din perfekta pluggpartner för att tillsammans erövra studielivet. Vi tror på kraften i samarbete och
+            gemenskap för att uppnå dina studiemål. Med oss kan du förvandla studierna från en ensam kamp till en
+            spännande
+            resa mot framgång tillsammans med likasinnade.</p>
+        </div>
+        <div class="col">
+          <h5 class="fw-bold">Varför Pluggportalen?</h5>
+          <p class="pb-3">
 
-      <h3 class="fw-bold">Varför Pluggportalen?</h3>
-      <ul>
-        <li>
-          <p class="">Gemenskap: Bygg starka band och dela din studieresa med andra.</p>
-        </li>
-        <li>
-          <p class="">Effektivitet: Tillsammans är vi starkare och når våra mål snabbare.</p>
-        </li>
-        <li>
-          <p class="">Motivation: Inspirera och bli inspirerad av dina pluggkompisar.</p>
-        </li>
-        <li>
-          <p class="">Målinriktat: Skräddarsydda matchningar för att säkerställa att du får den bästa studieupplevelsen.
-          </p>
-        </li>
-      </ul>
+            Gemenskap: Tillsammans bygger vi starka band och delar vår gemensamma studieresa. Effektivitet: Med vårt
+            samarbete blir vi starkare och når våra mål snabbare och mer effektivt. Motivation: Här kan du inspirera
+            andra och själv bli inspirerad av dina pluggkompisar. Målinriktat: Genom skräddarsydda matchningar ser vi
+            till att du får den bästa studieupplevelsen och når dina mål.</p>
+        </div>
 
-      <h5 class="py-5">Gör din studieresurs till din bästa kompis. Anslut till Pluggportalen idag och låt oss
-        tillsammans
-        forma din akademiska framtid!
-      </h5>
 
-      <div class="text-center pb-5">
-        <a class="btn btn-secondary btn-lg" href="register.html">Gå med i Pluggportalen</a>
+        <h5 class="py-5 text-center">Gör din studieresurs till din bästa kompis. Anslut till Pluggportalen idag och låt
+          oss
+          tillsammans
+          forma din akademiska framtid!
+        </h5>
+
+        <div class="text-center pb-5">
+          <a class="btn btn-secondary btn-lg" href="register.html">Gå med i Pluggportalen</a>
+        </div>
       </div>
     </div>
   </main>

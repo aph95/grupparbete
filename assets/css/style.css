@@ -22,6 +22,20 @@ nav li a :active {
   text-decoration-line: underline;
 }
 
+#login-btn i, span {
+  color:black;
+}
+
+#login-btn {
+  background-color:#ACA7E6;
+  border-color:#ACA7E6;
+}
+
+#login-btn:hover {
+  background-color:#8682b6;
+  border-color:#8682b6;
+}
+
 .btn {
   background-color: #2B274D;
   border-color: #2B274D;
@@ -34,9 +48,9 @@ nav li a :active {
   max-width: 6rem;
 }
 
-.btn-primary:hover {
-  background-color: #bf6211;
-  border-color: #bf6211;
+.btn-primary, #register-btn:hover {
+  background-color: #F7931D;
+  border-color: #F7931D;
   color: black;
 }
 

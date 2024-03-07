@@ -25,6 +25,9 @@
   <script src="assets/js/leader-line.min.js"></script>
   <script src="assets/js/bootstrap.bundle.js"></script>
   <script src="assets/js/back-to-top.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 
 </head>
 
@@ -41,29 +44,33 @@
 <div class="modal modal-sheet position-static d-block" tabindex="-1" role="dialog" id="modalSignin">
     <div class="modal-dialog mt-0" role="document">
       <div class="modal-content rounded-4 shadow">
-          <h1 class="fw-bold mb-4 text-center" style="font-size: 22pt;">Registrera dig</h1>
+          <h1 class="fw-bold mb-3 text-center" style="font-size: 22pt;">Registrera dig</h1>
         <div class="modal-body p-5 pt-0">
           <form class="">
-            <div class="mb-3">
-              <label for="register-username" class="form-label ms-2">Användarnamn</label>
+            <div class="mb-2">
+              <label for="register-username" class="form-label ms-2">Förnamn</label>
               <input type="text" class="form-control rounded-5" id="register-username">
             </div>
-            <div class="mb-3">
+            <div class="mb-2">
+              <label for="register-password" class="form-label ms-2">Efternamn</label>
+              <input type="text" class="form-control rounded-5" id="register-password">
+            </div>
+            <div class="mb-2">
                 <label for="register-email" class="form-label ms-2">E-post</label>
                 <input type="text" class="form-control rounded-5" id="register-email">
               </div>
-            <div class="mb-3">
+            <div class="mb-2">
               <label for="register-password" class="form-label ms-2">Lösenord</label>
               <input type="text" class="form-control rounded-5" id="register-password">
             </div>
             
-            <div class="mx-auto p-2" style="width: 15rem;">
-            <button class="btn-reg w-100 btn btn-lg rounded-5 btn-primary" type="submit">Registrera</button>
-            </div>
+           
+            <div class="mx-auto p-2 " style="width: 15rem;">
+            <a href="#" data-toggle="tooltip" data-placement="top" title="Genom att klicka på Registrera, accepterar du vårt användaravtal." button class="btn-reg w-100 btn btn-lg rounded-5 btn-primary my-2" type="submit">Registrera</button></a>
+          </div>
 
-            <br><p class="terms text-center" style="font-size: 8pt;">Genom att klicka på Registrera, accepterar du vårt användaravtal.</p>
 
-            <div class="row">
+            <div class="row mb-2">
               <div class="col mt-2" style="border-top: 1px solid rgb(255, 255, 255);"></div>
               <div class="col mt-2">
                   <h2 class="or text-center">eller</h2>
@@ -88,7 +95,7 @@
     </div>
   </div>
 
-  <div class="foot">
+  <div class="foot container d-flex justify-content-between">
     <li>© Copyright 2024</li>
     <li><a href="#"> Användaravtal</a></li>
     <li><a href="#"> Sekretesspolicy</a></li>
@@ -99,5 +106,9 @@
   
     </main>
 
-
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
 </body>

@@ -129,14 +129,15 @@ footer {
   background-color: #2B274D;
   color: white;
   display: flex;
-  padding-top: 3rem;
+  padding-top: 2.5rem;
   width: 26rem;
-  height: 46rem;
+  height: 45rem;
+  margin: 0 auto;
 }
 
 .modal-content .btn:active {
-  background-color: lightgrey;
-  border-color: lightgrey;
+  background-color:#C9D5FB;
+  border-color: #C9D5FB;
 }
 
 .modal-body .btn-danger {
@@ -158,28 +159,26 @@ footer {
   margin-top: -0.5rem;
 }
 
-.dropdown-item {
-  color: #ACA7E6;
+.dropdown-item:hover {
   text-decoration: underline;
 }
 
 .foot {
+  max-width: 768px;
   color: white;
   font-size: 10pt;
   list-style: none;
-  padding-left: 30rem;
-  padding-right: 30rem;
-  display: flex;
-  justify-content: space-between
+  margin: 0 auto;
 }
 
 .foot a {
   color: white;
+
 }
 
 /*Register*/
 .backround-register {
-  height: 100vh;
+  min-height: 100vh;
   background-image: linear-gradient(to right bottom, #3D2EB2, #B92637, #FFC33B);
 }
 
@@ -195,9 +194,6 @@ footer {
   border-color: #ACA7E6;
 }
 
-.terms {
-  margin-top: -1.2rem;
-}
 
 /* pop up */
 .erase {
@@ -205,6 +201,12 @@ footer {
   border-color: #B92637;
   color: white;
 }
+
+.erase:hover{
+  background-color: #771924;
+  border-color: #771924;
+}
+
 
 .pop {
   background-color: #2B274D;
@@ -224,7 +226,11 @@ footer {
 .check {
   background-color: #42BC5E;
   border-color: #42BC5E;
+}
 
+.check:hover {
+  background-color: #2c783e;
+  border-color: #2c783e;
 }
 
 .cancel {

@@ -4,10 +4,6 @@ body {
   font-family: "greycliff-cf", sans-serif !important;
 }
 
-.body-logged-out {
-  background-color:#FAF9F6;
-}
-
 h1 {
   font-family: "greycliff-cf", sans-serif;
 }
@@ -26,7 +22,8 @@ nav li a :active {
   text-decoration-line: underline;
 }
 
-#login-btn i, .login-text {
+#login-btn i,
+span {
   color: black;
 }
 
@@ -451,6 +448,18 @@ span {
   background: linear-gradient(to right bottom, #4f40be, #ACA7E6, #cad0eb);
 
 }
+
+
+.edit-profile .form-control:valid {
+  background-color:  #DFE3F4 !important;
+  border:none;
+}
+
+.edit-profile .btn-save-profile-edit {
+  background-color: #F7931D;
+  border: none;
+}
+
 
 
 

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Profil - Pluggportalen</title>
+    <title>Redigera profil</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome for icons -->
@@ -113,21 +113,24 @@
         </nav>
         <!-- Main -->
         <main class="col p-5">
-            <h2 class="mb-5 ms-3 fs-5 fw-bold">Redigera din profil</h2>
+            <h2 class="mb-4 ms-3 fs-5 fw-bold">Redigera din profil</h2>
             <div class="container edit-profile col-9 pt-4 px-0"> <!--för hela profilen-->
 
 
-                <div class="row justify-content-center mb-5">
+                <div class="row justify-content-center">
                     <!--Left side of the profile-->
                     <div class="edit-profile-left col-5 me-2">
                         <div class="text-center">
-                            <img src="../images/review_2.webp" class="rounded-circle shadow-1-strong mb-1" width="150"
-                                height="150" alt="profilbild">
-                            <p>Ändra bild</p>
+                            <img src="../images/review_1.webp" class="rounded-circle shadow-1-strong mb-1" width="200"
+                                height="200" alt="profilbild">
+                                <p><a href="#" class="link-dark" href="#">Ändra bild</a></p>
+
+
+                                
 
 
                             <!--Left profile update form-->
-                            <div class="container">
+                            <div class="container mt-4">
                                 <form action="#" method="post">
                                     
                                     <div class="row mb-2">
@@ -144,7 +147,7 @@
                                     </div>
                                     <div class="row mb-2">
                                         <div class="col">
-                                            <input type="text" class="form-control" id="age" name="age"
+                                            <input type="date" class="form-control" id="age" name="age"
                                                 placeholder="Ålder">
                                         </div>
                                     </div>
@@ -156,21 +159,17 @@
                                     </div>
                                     <div class="row mb-2">
                                         <div class="col">
-                                            <input type="text" class="form-control" id="school" name="school"
-                                                placeholder="Skola">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-2">
-                                        <div class="col">
                                             <input type="text" class="form-control" id="education" name="education"
                                                 placeholder="Utbildning">
                                         </div>
                                     </div>
                                 </form>
                             </div>
-                            <div class="d-flex justify-content-center my-4">
-                                <a class="btn btn-danger" href="#"><i class="fa-solid fa-trash-can me-1"></i>Radera
-                                    profil</a>
+                            <div class="d-flex justify-content-center">
+                                <a class="btn btn-secondary me-2" href="profile.html"><i
+                                        class="fa-solid fa-xmark me-1"></i> Avbryt</a>
+                                <a class="btn btn-success btn-save-profile-edit ms-2" href="#"><i class="fa-solid fa-check me-1"></i>
+                                    Spara</a>
                             </div>
                         </div>
                     </div>
@@ -184,7 +183,7 @@
                             <form action="#" method="post">
                                 <div class="row mb-2">
                                     <div class="col">
-                                        <textarea class="form-control" id="aboutme" name="aboutme" rows="7"
+                                        <textarea class="form-control" id="aboutme" name="aboutme" rows="8"
                                             placeholder="Om dig"></textarea>
                                     </div>
                                 </div>
@@ -225,12 +224,11 @@
                                     </div>
                                 </div>
                             </form>
-                            <div class="d-flex justify-content-center my-4">
-                                <a class="btn btn-secondary me-2" href="profile.html"><i
-                                        class="fa-solid fa-xmark me-1"></i> Avbryt</a>
-                                <a class="btn btn-success ms-2" href="#"><i class="fa-solid fa-check me-1"></i>
-                                    Spara</a>
+                            <div class="d-flex justify-content-center">
+                                <a class="btn btn-danger" href="#"><i class="fa-solid fa-trash-can me-1"></i>Radera
+                                    profil</a>
                             </div>
+
                         </div>
                     </div>
                 </div>

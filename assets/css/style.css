@@ -449,15 +449,31 @@ span {
 
 }
 
-
 .edit-profile .form-control:valid {
   background-color:  #DFE3F4 !important;
   border:none;
 }
 
-.edit-profile .btn-save-profile-edit {
+.edit-profile .save-profile-btn {
   background-color: #F7931D;
   border: none;
+}
+
+.edit-profile .save-profile-btn:hover {
+  background-color: #e7800b;
+
+}
+
+.edit-profile .link-danger {
+  text-decoration: none;
+}
+
+.edit-profile .link-dark {
+  text-decoration: none;
+}
+
+.edit-profile .delete-profile-btn{
+  font-size: 0.9rem;
 }
 
 

@@ -113,24 +113,21 @@
         </nav>
         <!-- Main -->
         <main class="col p-5">
+            
             <h2 class="mb-4 ms-3 fs-5 fw-bold">Redigera din profil</h2>
-            <div class="container edit-profile col-9 pt-4 px-0"> <!--för hela profilen-->
-
+            <div class="container edit-profile col-9 pt-5 pb-2 px-0"> <!--för hela profilen-->
 
                 <div class="row justify-content-center">
-                    <!--Left side of the profile-->
+                    <!--Left side of edit profile-->
                     <div class="edit-profile-left col-5 me-2">
                         <div class="text-center">
                             <img src="../images/review_1.webp" class="rounded-circle shadow-1-strong mb-1" width="200"
                                 height="200" alt="profilbild">
                                 <p><a href="#" class="link-dark" href="#">Ändra bild</a></p>
+                        </div>
 
-
-                                
-
-
-                            <!--Left profile update form-->
-                            <div class="container mt-4">
+                            <!--Left update form-->
+                            <div class="container">
                                 <form action="#" method="post">
                                     
                                     <div class="row mb-2">
@@ -165,25 +162,21 @@
                                     </div>
                                 </form>
                             </div>
-                            <div class="d-flex justify-content-center">
-                                <a class="btn btn-secondary me-2" href="profile.html"><i
-                                        class="fa-solid fa-xmark me-1"></i> Avbryt</a>
-                                <a class="btn btn-success btn-save-profile-edit ms-2" href="#"><i class="fa-solid fa-check me-1"></i>
-                                    Spara</a>
-                            </div>
-                        </div>
+                                    <p class="delete-profile-btn text-start ms-3 mt-4"><a href="#" class="link-danger" 
+                                        href="#">Radera konto</a></p>                         
                     </div>
 
 
-                    <!--Right side of the profile-->
+                    <!--Right side of edit profile-->
                     <div class="edit-profile-right col-5 ms-2">
-                        <div class="container">
 
-                            <!--Right profile update form-->
+                            <!--Right update form-->
+                            <div class="container">
                             <form action="#" method="post">
+                                
                                 <div class="row mb-2">
                                     <div class="col">
-                                        <textarea class="form-control" id="aboutme" name="aboutme" rows="8"
+                                        <textarea class="form-control mb-3" id="aboutme" name="aboutme" rows="7"
                                             placeholder="Om dig"></textarea>
                                     </div>
                                 </div>
@@ -224,10 +217,17 @@
                                     </div>
                                 </div>
                             </form>
-                            <div class="d-flex justify-content-center">
-                                <a class="btn btn-danger" href="#"><i class="fa-solid fa-trash-can me-1"></i>Radera
-                                    profil</a>
+
+
+                            <div class="d-flex justify-content-center mt-4">
+                                <a class="btn btn-secondary me-2" href="profile.html"><i
+                                        class="fa-solid fa-xmark me-1"></i> Avbryt</a>
+                                <a class="btn btn-success save-profile-btn ms-2" href="#"><i class="fa-solid fa-check me-1"></i>
+                                    Spara</a>
                             </div>
+
+
+
 
                         </div>
                     </div>

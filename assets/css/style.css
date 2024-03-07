@@ -277,13 +277,9 @@ footer {
 
 .navbar-logged-in .nav-link {
   display: flex;
-  /* Use flexbox */
   flex-direction: column;
-  /* Stack items vertically */
   justify-content: center;
-  /* Center vertically */
   align-items: center;
-  /* Center horizontally */
   padding: 1rem;
   text-align: center;
 }

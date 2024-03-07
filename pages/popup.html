@@ -39,14 +39,28 @@
 
     </main>
 
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Event feedback
+    </button>
   
-
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="pop modal-content rounded-4">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Evenemanget är borttaget!</h1>
+          </div>
+          <div class="modal-footer">
+            <button class="check btn btn-secondary btn-lg rounded-pill px-5" data-bs-target="close" data-bs-toggle="modal"><i class="fa-solid fa-check" style="color: #ffffff;"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
           <div class="pop modal-content rounded-4">
             <div class="modal-header">
-              <h1 class="modal-title fs-5 text-center" id="exampleModalToggleLabel">Vill du radera evenemanget från din kalender?</h1>
+              <h1 class="modal-title fs-5 text-center" id="exampleModalToggleLabel">Är du säker på att du vill radera din användare?</h1>
               
             </div>
             <div class="modal-footer">
@@ -62,7 +76,7 @@
         <div class="modal-dialog modal-dialog-centered">
           <div class="pop modal-content rounded-4">
             <div class="modal-header">
-              <h1 class="modal-title fs-5 text-center" id="exampleModalToggleLabel2">Evenemanget är nu raderat från din kalender!</h1>
+              <h1 class="modal-title fs-5 text-center" id="exampleModalToggleLabel2">Din användare är raderad</h1>
               
             </div>
            

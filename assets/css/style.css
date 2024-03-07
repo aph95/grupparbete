@@ -439,20 +439,23 @@ span {
   line-height: 1rem;
 }
 
+
+
 /* Profile edit*/
 
-.edit-profile-left {
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  background-color: #a7b4f0;
-}
-
-.edit-profile-right {
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  background-color: #DFE3F4;
+.edit-profile {
+  border-radius: 20px;
+  background: linear-gradient(to right bottom, #4f40be, #ACA7E6, #cad0eb);
 
 }
+
+
+
+
+
+
+
+
 
 /* Events */
 

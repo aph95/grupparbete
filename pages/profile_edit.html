@@ -113,19 +113,23 @@
         </nav>
         <!-- Main -->
         <main class="col p-5">
-            <h2 class="mb-5 fw-bold">Redigera din profil</h2>
-            <div class="container">
+            <h2 class="mb-5 ms-3 fs-5 fw-bold">Redigera din profil</h2>
+            <div class="container edit-profile col-9 pt-4 px-0"> <!--för hela profilen-->
+
+
                 <div class="row justify-content-center mb-5">
                     <!--Left side of the profile-->
-                    <div class="edit-profile-left col-4 p-4">
+                    <div class="edit-profile-left col-5 me-2">
                         <div class="text-center">
                             <img src="../images/review_2.webp" class="rounded-circle shadow-1-strong mb-1" width="150"
                                 height="150" alt="profilbild">
                             <p>Ändra bild</p>
 
+
                             <!--Left profile update form-->
-                            <div class="container px-2">
+                            <div class="container">
                                 <form action="#" method="post">
+                                    
                                     <div class="row mb-2">
                                         <div class="col">
                                             <input type="text" class="form-control" id="firstname" name="firstname"
@@ -164,15 +168,18 @@
                                     </div>
                                 </form>
                             </div>
-                            <div class="d-flex justify-content-center mt-5">
+                            <div class="d-flex justify-content-center my-4">
                                 <a class="btn btn-danger" href="#"><i class="fa-solid fa-trash-can me-1"></i>Radera
                                     profil</a>
                             </div>
                         </div>
                     </div>
+
+
                     <!--Right side of the profile-->
-                    <div class="edit-profile-right col-5 p-4">
-                        <div class="container px-2">
+                    <div class="edit-profile-right col-5 ms-2">
+                        <div class="container">
+
                             <!--Right profile update form-->
                             <form action="#" method="post">
                                 <div class="row mb-2">
@@ -218,7 +225,7 @@
                                     </div>
                                 </div>
                             </form>
-                            <div class="d-flex justify-content-center mt-5">
+                            <div class="d-flex justify-content-center my-4">
                                 <a class="btn btn-secondary me-2" href="profile.html"><i
                                         class="fa-solid fa-xmark me-1"></i> Avbryt</a>
                                 <a class="btn btn-success ms-2" href="#"><i class="fa-solid fa-check me-1"></i>
@@ -227,7 +234,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+
+
+            </div><!--För hela profilen-->
         </main>
         <!-- Aside -->
         <aside class="aside-logged-in col-2">

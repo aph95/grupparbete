@@ -4,6 +4,10 @@ body {
   font-family: "greycliff-cf", sans-serif !important;
 }
 
+.body-logged-out {
+  background-color:#FAF9F6;
+}
+
 h1 {
   font-family: "greycliff-cf", sans-serif;
 }
@@ -22,8 +26,7 @@ nav li a :active {
   text-decoration-line: underline;
 }
 
-#login-btn i,
-span {
+#login-btn i, .login-text {
   color: black;
 }
 
@@ -264,6 +267,11 @@ footer {
   min-height: 7rem;
 }
 
+.online .badge {
+  background-color: #2B274D;
+  border-color: #2B274D;
+}
+
 .navbar-logged-in {
   min-height: 100vh;
   width: 10vh;
@@ -439,35 +447,20 @@ span {
   line-height: 1rem;
 }
 
-
-
 /* Profile edit*/
 
-.edit-profile {
-  border-radius: 20px;
-  background: linear-gradient(to right bottom, #4f40be, #ACA7E6, #cad0eb);
-
+.edit-profile-left {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #a7b4f0;
 }
 
+.edit-profile-right {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #a7b4f0;
 
-.edit-profile .form-control:valid {
-  background-color:  #DFE3F4 !important;
-  border:none;
 }
-
-.edit-profile .btn-save-profile-edit {
-  background-color: #F7931D;
-  border: none;
-}
-
-
-
-
-
-
-
-
-
 
 /* Events */
 

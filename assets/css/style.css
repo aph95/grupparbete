@@ -388,10 +388,15 @@ footer {
 .bookmark-event {
   color: white;
   position: relative;
-  bottom: 73%;
-  left: 35%;
+  bottom: 68%;
+  left: 85%;
 }
 
 .event-social-icons i {
   color: #2B274D;
 }
+
+.next-button {
+  margin-top: 8rem;
+}
+

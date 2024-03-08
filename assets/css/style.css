@@ -523,6 +523,9 @@ span {
   bottom: 50%;
 }
 
+.eventimage img{
+  filter:brightness(70%);
+}
 
 .events .event-text {
   position: relative;

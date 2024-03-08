@@ -433,7 +433,10 @@ span {
 
 .profile-right p {
   font-size: 0.9rem;
-  max-width: 20rem;
+}
+
+.profile-right .profile-information {
+  line-height: 1.4rem;
 }
 
 .fa-location-dot,
@@ -443,23 +446,41 @@ span {
   pointer-events: none;
 }
 
-.profile-left .info {
-  line-height: 1rem;
-}
-
 /* Profile edit*/
 
-.edit-profile-left {
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  background-color: #a7b4f0;
+.edit-profile-heading {
+  margin-left: 17%;
 }
 
-.edit-profile-right {
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  background-color: #a7b4f0;
+.edit-profile {
+  background: linear-gradient(to right bottom, #4f40be, #ACA7E6, #cad0eb);
+  border-radius: 20px;;
+}
 
+.form-control:valid {
+  background-color: #e8ebf5 !important;
+  border-color: #e8ebf5;
+}
+
+.edit-profile-picture-btn {
+  text-decoration: none;
+}
+
+.delete-profile {
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.edit-profile .save-profile-btn {
+  background-color: #F7931D;
+}
+
+.edit-profile .save-profile-btn, .edit-profile .btn-secondary {
+  border: none;
+}
+
+.edit-profile .save-profile-btn:hover {
+  background-color: #e77e07;
 }
 
 /* Events */

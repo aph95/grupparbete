@@ -112,74 +112,68 @@
             </div>
         </nav>
         <!-- Main -->
-        <main class="col p-5">
-            
-            <h2 class="mb-4 ms-3 fs-5 fw-bold">Redigera din profil</h2>
-            <div class="container edit-profile col-9 pt-5 pb-2 px-0"> <!--för hela profilen-->
-
+        <main class="col p-2">
+            <!--Edit profile-->
+            <h2 class="edit-profile-heading my-3 fs-5 fw-bold">Redigera din profil</h2>
+            <div class="container edit-profile col-8 py-3"> <!--för hela profilen-->
                 <div class="row justify-content-center">
-                    <!--Left side of edit profile-->
+                <!--Left side of edit profile-->
                     <div class="edit-profile-left col-5 me-2">
                         <div class="text-center">
                             <img src="../images/review_1.webp" class="rounded-circle shadow-1-strong mb-1" width="200"
                                 height="200" alt="profilbild">
-                                <p><a href="#" class="link-dark" href="#">Ändra bild</a></p>
+                            <p><a href="#" class="link-dark edit-profile-picture-btn">Ändra bild</a></p>
                         </div>
-
-                            <!--Left update form-->
-                            <div class="container">
-                                <form action="#" method="post">
-                                    
-                                    <div class="row mb-2">
-                                        <div class="col">
-                                            <input type="text" class="form-control" id="firstname" name="firstname"
-                                                placeholder="Förnamn">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-2">
-                                        <div class="col">
-                                            <input type="text" class="form-control" id="lastname" name="lastname"
-                                                placeholder="Efternamn">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-2">
-                                        <div class="col">
-                                            <input type="date" class="form-control" id="age" name="age"
-                                                placeholder="Ålder">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-2">
-                                        <div class="col">
-                                            <input type="text" class="form-control" id="city" name="city"
-                                                placeholder="Stad">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-2">
-                                        <div class="col">
-                                            <input type="text" class="form-control" id="education" name="education"
-                                                placeholder="Utbildning">
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                                    <p class="delete-profile-btn text-start ms-3 mt-4"><a href="#" class="link-danger" 
-                                        href="#">Radera konto</a></p>                         
-                    </div>
-
-
-                    <!--Right side of edit profile-->
-                    <div class="edit-profile-right col-5 ms-2">
-
-                            <!--Right update form-->
-                            <div class="container">
+                        <!--Left update form-->
+                        <div class="container">
                             <form action="#" method="post">
-                                
                                 <div class="row mb-2">
                                     <div class="col">
-                                        <textarea class="form-control mb-3" id="aboutme" name="aboutme" rows="7"
+                                        <input type="text" class="form-control" id="firstname" name="firstname"
+                                            placeholder="Förnamn">
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col">
+                                        <input type="text" class="form-control" id="lastname" name="lastname"
+                                            placeholder="Efternamn">
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col">
+                                        <input type="date" class="form-control" id="age" name="age">
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col">
+                                        <input type="text" class="form-control" id="city" name="city"
+                                            placeholder="Stad">
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col">
+                                        <input type="text" class="form-control" id="education" name="education"
+                                            placeholder="Utbildning">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="text-center mt-3">
+                            <p><a href="#" class="link-danger delete-profile">Radera konto</a></p>
+                        </div>
+                    </div>
+                    <!--Right side of edit profile-->
+                    <div class="edit-profile-right col-5 ms-2">
+                        <!--Right update form-->
+                        <div class="container py-2">
+                            <form action="#" method="post">
+                                <div class="row mb-2">
+                                    <div class="col">
+                                        <textarea class="form-control" id="aboutme" name="aboutme" rows="7"
                                             placeholder="Om dig"></textarea>
                                     </div>
                                 </div>
+
                                 <div class="row mb-2">
                                     <div class="col">
                                         <input type="text" class="form-control" id="experience" name="experience"
@@ -217,24 +211,17 @@
                                     </div>
                                 </div>
                             </form>
-
-
                             <div class="d-flex justify-content-center mt-4">
-                                <a class="btn btn-secondary me-2" href="profile.html"><i
+                                <a class="btn btn-secondary cancel-edit-profile me-2" href="profile.html"><i
                                         class="fa-solid fa-xmark me-1"></i> Avbryt</a>
-                                <a class="btn btn-success save-profile-btn ms-2" href="#"><i class="fa-solid fa-check me-1"></i>
+                                <a class="btn btn-success save-profile-btn ms-2" href="#"><i
+                                        class="fa-solid fa-check me-1"></i>
                                     Spara</a>
                             </div>
-
-
-
-
                         </div>
                     </div>
                 </div>
-
-
-            </div><!--För hela profilen-->
+            </div>
         </main>
         <!-- Aside -->
         <aside class="aside-logged-in col-2">

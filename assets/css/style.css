@@ -123,6 +123,13 @@ footer {
   transform: translate(-50%, -50%);
 }
 
+.index-reg-btn:hover, .index-sub-btn:hover {
+  background-color: #F7931D;
+  border-color: #F7931D;
+}
+
+
+
 /*LOG IN*/
 .backround-login {
   height: 100vh;

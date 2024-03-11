@@ -46,29 +46,28 @@
       <div class="modal-content rounded-4 shadow">
           <h1 class="fw-bold mb-3 text-center" style="font-size: 22pt;">Registrera dig</h1>
         <div class="modal-body p-5 pt-0">
-          <form class="">
+          <form action="register.php" method="post">
             <div class="mb-2">
-              <label for="register-username" class="form-label ms-2">Förnamn</label>
-              <input type="text" class="form-control rounded-5" id="register-username">
+              <label for="firstname" class="form-label ms-2">Förnamn</label>
+              <input type="text" class="form-control rounded-5" id="firstname" name="firstname">
             </div>
             <div class="mb-2">
-              <label for="register-password" class="form-label ms-2">Efternamn</label>
-              <input type="text" class="form-control rounded-5" id="register-password">
+              <label for="lastname" class="form-label ms-2">Efternamn</label>
+              <input type="text" class="form-control rounded-5" id="firstname" name="lastname">
             </div>
             <div class="mb-2">
-                <label for="register-email" class="form-label ms-2">E-post</label>
-                <input type="text" class="form-control rounded-5" id="register-email">
+                <label for="email" class="form-label ms-2">E-post</label>
+                <input type="email" class="form-control rounded-5" id="email" name="email">
               </div>
             <div class="mb-2">
-              <label for="register-password" class="form-label ms-2">Lösenord</label>
-              <input type="text" class="form-control rounded-5" id="register-password">
+              <label for="password" class="form-label ms-2">Lösenord</label>
+              <input type="password" class="form-control rounded-5" id="password" name="password">
             </div>
             
-           
-            <div class="mx-auto p-2 " style="width: 15rem;">
-            <a href="#" data-toggle="tooltip" data-placement="top" title="Genom att klicka på Registrera, accepterar du vårt användaravtal." button class="btn-reg w-100 btn btn-lg rounded-5 btn-primary my-2" type="submit">Registrera</button></a>
-          </div>
-
+                <div class="mx-auto p-2 " style="width: 15rem;">
+                <button type="submit" data-toggle="tooltip" data-placement="top" title="Genom att klicka på Registrera, accepterar du vårt användaravtal." button class="btn-reg w-100 btn btn-lg rounded-5 btn-primary my-2" name="register">Registrera</button>
+            </div>
+          </form>
 
             <div class="row mb-2">
               <div class="col mt-2" style="border-top: 1px solid rgb(255, 255, 255);"></div>
@@ -112,3 +111,6 @@ $(document).ready(function(){
 });
 </script>
 </body>
+
+
+</html>

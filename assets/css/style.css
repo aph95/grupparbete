@@ -128,8 +128,6 @@ footer {
   border-color: #F7931D;
 }
 
-
-
 /*LOG IN*/
 .backround-login {
   height: 100vh;
@@ -498,28 +496,17 @@ span {
 
 /* Events */
 
-.add-button {
+.btn-info {
   background-color: #F7931D !important;
   border-color: #F7931D !important;
   color: white;
   max-width: 10rem;
 }
 
-.add-button:hover {
-  background-color: #97561e;
-  border-color: #97561e;
+.btn-info:hover {
+  background-color: #bf6211;
+  border-color: #bf6211;
   color: white;
-}
-
-.add-button:active {
-  background-color: #2B274D;
-  
-}
-
-
-.add-button:focus {
-  background-color: #2B274D;
-  
 }
 
 .btn-light {

@@ -1,4 +1,4 @@
-<!DOCTYPE >
+<!DOCTYPE html>
 <html lang="sv">
 
 <head>
@@ -32,83 +32,94 @@
 </head>
 
 <body class="backround-register">
-    <header>
-        <div class="d-flex justify-content-between">
-        <a href="../index.html"><img src="../images/logo.svg" class="logo-login mt-4 ms-4" height="100" alt="logo"></a>
-    <a href="../index.html"><i class="fa-solid fa-house mt-5 me-5" style="font-size: 3rem; color: white;"></i></a>
-</div>
+  <header>
+    <div class="d-flex justify-content-between">
+      <a href="../index.html"><img src="../images/logo.svg" class="logo-login mt-4 ms-4" height="100" alt="logo"></a>
+      <a href="../index.html"><i class="fa-solid fa-house mt-5 me-5" style="font-size: 3rem; color: white;"></i></a>
+    </div>
 
-    </header>
-    <main>
+  </header>
+  <main>
 
-<div class="modal modal-sheet position-static d-block" tabindex="-1" role="dialog" id="modalSignin">
-    <div class="modal-dialog mt-0" role="document">
-      <div class="modal-content rounded-4 shadow">
+    <div class="modal modal-sheet position-static d-block" tabindex="-1" role="dialog" id="modalSignin">
+      <div class="modal-dialog mt-0" role="document">
+        <div class="modal-content rounded-4 shadow">
           <h1 class="fw-bold mb-3 text-center" style="font-size: 22pt;">Registrera dig</h1>
-        <div class="modal-body p-5 pt-0">
-          <form action="register.php" method="post">
-            <div class="mb-2">
-              <label for="firstname" class="form-label ms-2">Förnamn</label>
-              <input type="text" class="form-control rounded-5" id="firstname" name="firstname">
-            </div>
-            <div class="mb-2">
-              <label for="lastname" class="form-label ms-2">Efternamn</label>
-              <input type="text" class="form-control rounded-5" id="lastname" name="lastname">
-            </div>
-            <div class="mb-2">
+          <div class="modal-body p-5 pt-0">
+            <form action="register.php" method="post">
+              <div class="mb-2">
+                <label for="firstname" class="form-label ms-2">Förnamn</label>
+                <input type="text" class="form-control rounded-5" id="firstname" name="firstname">
+              </div>
+              <div class="mb-2">
+                <label for="lastname" class="form-label ms-2">Efternamn</label>
+                <input type="text" class="form-control rounded-5" id="lastname" name="lastname">
+              </div>
+              <div class="mb-2">
                 <label for="email" class="form-label ms-2">E-post</label>
                 <input type="email" class="form-control rounded-5" id="email" name="email">
               </div>
-            <div class="mb-2">
-              <label for="password" class="form-label ms-2">Lösenord</label>
-              <input type="password" class="form-control rounded-5" id="password" name="password">
-            </div>
-            
-                <div class="mx-auto p-2 " style="width: 15rem;">
-                <button type="submit" data-toggle="tooltip" data-placement="top" title="Genom att klicka på Registrera, accepterar du vårt användaravtal." button class="btn-reg w-100 btn btn-lg rounded-5 btn-primary my-2" name="register">Registrera</button>
-            </div>
-          </form>
+              <div class="mb-2">
+                <label for="password" class="form-label ms-2">Lösenord</label>
+                <input type="password" class="form-control rounded-5" id="password" name="password">
+              </div>
+
+              <div class="mx-auto p-2 " style="width: 15rem;">
+                <button type="submit" data-toggle="tooltip" data-placement="top"
+                  title="Genom att klicka på Registrera, accepterar du vårt användaravtal."
+                  class="btn-reg w-100 btn btn-lg rounded-5 btn-primary my-2" name="register">Registrera</button>
+              </div>
+            </form>
 
             <div class="row mb-2">
               <div class="col mt-2" style="border-top: 1px solid rgb(255, 255, 255);"></div>
               <div class="col mt-2">
-                  <h2 class="or text-center">eller</h2>
+                <h2 class="or text-center">eller</h2>
               </div>
               <div class="col mt-2" style="border-top: 1px solid rgb(255, 255, 255);"></div>
-          </div>
-          
-          <div class="mx-auto p-2" style="width: 20rem;">
-            <a href="/pages/login.html" button class="btn-login w-100 py-2 mb-3 btn btn-danger rounded-5" style="max-width: 20rem;" type="submit"><i class="fa-solid fa-right-to-bracket me-2"></i>
-              Logga in
-            </a>
-            <button class="w-100 py-2 mb-3 btn btn-secondary rounded-5" style="max-width: 20rem;" type="submit"><i class="fa-brands fa-facebook mx-1"></i>
-              Fortsätt med Facebook
-            </button>
-            <button class="w-100 py-2 mb-2 btn btn-secondary rounded-5" style="max-width: 20rem;" type="submit"><i class="fa-brands fa-google mx-1"></i>
-              Fortsätt med Google
-            </button>
+            </div>
+
+            <div class="mx-auto p-2" style="width: 20rem;">
+              <a href="/pages/login.html" class="btn-login w-100 py-2 mb-3 btn btn-danger rounded-5"
+                style="max-width: 20rem;"><i class="fa-solid fa-right-to-bracket me-2"></i>
+                Logga in
+              </a>
+              <button class="w-100 py-2 mb-3 btn btn-secondary rounded-5" style="max-width: 20rem;" type="submit"><i
+                  class="fa-brands fa-facebook mx-1"></i>
+                Fortsätt med Facebook
+              </button>
+              <button class="w-100 py-2 mb-2 btn btn-secondary rounded-5" style="max-width: 20rem;" type="submit"><i
+                  class="fa-brands fa-google mx-1"></i>
+                Fortsätt med Google
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="foot container text-center">
+      <div class="row">
+      <div class="col">
+      <ul>
+        <li>© Copyright 2024</li>
+        <li><a href="#"> Användaravtal</a></li>
+        <li><a href="#"> Sekretesspolicy</a></li>
+        <li><a href="#"> Skicka feedback</a></li>
+      </ul>
+    </div>
+    </div>
   </div>
 
-  <div class="foot container d-flex justify-content-between">
-    <li>© Copyright 2024</li>
-    <li><a href="#"> Användaravtal</a></li>
-    <li><a href="#"> Sekretesspolicy</a></li>
-    <li><a href="#"> Skicka feedback</a></li>
-  </div>
-  
-  
-  
-    </main>
 
-<script>
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip(); 
-  });
-</script>
+
+  </main>
+
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
 </body>
 
 

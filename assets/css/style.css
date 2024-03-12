@@ -189,6 +189,12 @@ footer {
   text-decoration: underline;
 }
 
+.foot li {
+  list-style: none;
+  display: inline;
+  margin-right:2rem;
+}
+
 .foot {
   max-width: 768px;
   color: white;
@@ -492,24 +498,29 @@ span {
 
 /* Events */
 
-.btn-info {
+.add-button {
   background-color: #F7931D !important;
   border-color: #F7931D !important;
   color: white;
   max-width: 10rem;
 }
 
-.btn-info:hover {
-  background-color: #bf6211;
-  border-color: #bf6211;
+.add-button:hover {
+  background-color: #97561e;
+  border-color: #97561e;
   color: white;
 }
 
-.btn-info:focus {
+.add-button:active {
   background-color: #2B274D;
   
 }
 
+
+.add-button:focus {
+  background-color: #2B274D;
+  
+}
 
 .btn-light {
   background-color: #F7931D !important;

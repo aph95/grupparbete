@@ -505,6 +505,7 @@ span {
   color: white;
 }
 
+
 .btn-light {
   background-color: #F7931D !important;
   border-color: #F7931D !important;
@@ -530,7 +531,11 @@ span {
   bottom: 50%;
 }
 
-.eventimage img{
+.eventimage {
+  filter:brightness(70%);
+}
+
+.eventimage1 img{
   filter:brightness(70%);
 }
 

@@ -379,6 +379,10 @@ span {
   margin: auto;
 }
 
+.homeprofileimage img{
+  filter:brightness(60%);
+}
+
 .shuffle-button:hover {
   color: rgb(255, 255, 255);
   background-color: #a7b4f0;

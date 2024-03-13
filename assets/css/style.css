@@ -128,8 +128,6 @@ footer {
   border-color: #F7931D;
 }
 
-
-
 /*LOG IN*/
 .backround-login {
   height: 100vh;
@@ -187,6 +185,12 @@ footer {
 
 .dropdown-item:hover {
   text-decoration: underline;
+}
+
+.foot li {
+  list-style: none;
+  display: inline;
+  margin-right:2rem;
 }
 
 .foot {
@@ -504,12 +508,6 @@ span {
   border-color: #bf6211;
   color: white;
 }
-
-.btn-info:focus {
-  background-color: #2B274D;
-  
-}
-
 
 .btn-light {
   background-color: #F7931D !important;

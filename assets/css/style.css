@@ -128,6 +128,8 @@ footer {
   border-color: #F7931D;
 }
 
+
+
 /*LOG IN*/
 .backround-login {
   height: 100vh;
@@ -185,12 +187,6 @@ footer {
 
 .dropdown-item:hover {
   text-decoration: underline;
-}
-
-.foot li {
-  list-style: none;
-  display: inline;
-  margin-right:2rem;
 }
 
 .foot {
@@ -509,6 +505,12 @@ span {
   color: white;
 }
 
+.btn-info:active {
+  background-color: #2B274D;
+
+}
+
+
 .btn-light {
   background-color: #F7931D !important;
   border-color: #F7931D !important;
@@ -535,7 +537,7 @@ span {
 }
 
 .eventimage {
-  filter:brightness(70%);
+  filter:brightness(100%);
 }
 
 .eventimage1 img{
@@ -553,8 +555,8 @@ span {
 
 .bookmark-event {
   color: white;
-  position: relative;
-  bottom: 68%;
+  position: absolute;
+  top: 2.7%;
   left: 85%;
 }
 

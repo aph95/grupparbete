@@ -477,11 +477,6 @@ span {
   text-decoration: none;
 }
 
-.delete-profile {
-  font-size: 1rem;
-  text-decoration: none;
-}
-
 .edit-profile .save-profile-btn {
   background-color: #F7931D;
 }
@@ -492,6 +487,46 @@ span {
 
 .edit-profile .save-profile-btn:hover {
   background-color: #e77e07;
+}
+
+.delete-profile {
+  font-size: 1rem;
+  text-decoration: none;
+  background:none; 
+  border:none;
+}
+
+/*Alice*/
+.answer {
+  color: black;
+}
+
+.profile-contact .message {
+  background-color: #2b274d;
+  color: white;
+}
+
+.profile-contact .add-friend {
+  background-color: #F7931D;
+  color: white;
+}
+
+.profile-contact .fa-user-plus, .profile-contact .fa-message{
+  color: white;
+}
+
+.profile-right .fa-user-plus, .fa-message {
+  pointer-events: none;
+}
+
+.profile-right .message:hover {
+  background-color: #413d66;
+  color:white;
+}
+
+.profile-right .add-friend:hover {
+  background-color: #e77e07;
+  color: white;
 }
 
 /* Events */

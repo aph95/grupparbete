@@ -128,6 +128,8 @@ footer {
   border-color: #F7931D;
 }
 
+
+
 /*LOG IN*/
 .backround-login {
   height: 100vh;
@@ -185,12 +187,6 @@ footer {
 
 .dropdown-item:hover {
   text-decoration: underline;
-}
-
-.foot li {
-  list-style: none;
-  display: inline;
-  margin-right:2rem;
 }
 
 .foot {
@@ -383,6 +379,10 @@ span {
   margin: auto;
 }
 
+.homeprofileimage img{
+  filter:brightness(60%);
+}
+
 .shuffle-button:hover {
   color: rgb(255, 255, 255);
   background-color: #a7b4f0;
@@ -544,6 +544,12 @@ span {
   color: white;
 }
 
+.btn-info:active {
+  background-color: #2B274D;
+
+}
+
+
 .btn-light {
   background-color: #F7931D !important;
   border-color: #F7931D !important;
@@ -570,10 +576,10 @@ span {
 }
 
 .eventimage {
-  filter:brightness(70%);
+  filter:brightness(100%);
 }
 
-.eventimage1 img{
+.eventimage img{
   filter:brightness(70%);
 }
 
@@ -588,8 +594,8 @@ span {
 
 .bookmark-event {
   color: white;
-  position: relative;
-  bottom: 68%;
+  position: absolute;
+  top: 2.7%;
   left: 85%;
 }
 

@@ -39,22 +39,7 @@
 
     </main>
 
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      Event feedback
-    </button>
-  
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="pop modal-content rounded-4">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Evenemanget är borttaget!</h1>
-          </div>
-          <div class="modal-footer">
-            <button class="check btn btn-secondary btn-lg rounded-pill px-5" data-bs-target="close" data-bs-toggle="modal"><i class="fa-solid fa-check" style="color: #ffffff;"></i></button>
-          </div>
-        </div>
-      </div>
-    </div>
+
 
     <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
@@ -87,6 +72,34 @@
         </div>
       </div>
       <button class="erase btn btn-secondary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Radera</button>
+
+
+
+      
+
+<!-- Button trigger modal -->
+<div class="text-center fw-bold mt-4">
+  <button type="submit" class="link-danger delete-profile" data-bs-toggle="modal" data-bs-target="#exampleModal">Radera konto</button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="pop modal-content rounded-4">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Är du säker på att du vill radera din användare?</h1>
+      </div>
+      <div class="modal-footer">
+        <button class="erase btn btn-secondary rounded-pill px-5" data-bs-target="#exampleModal" data-bs-toggle="modal" name="delete"><i class="fa-solid fa-trash-can me-1" style="color: #ffffff;"></i>Radera</button>
+      </div>
+      <div class="modal-footer">
+          <button class="cancel btn btn-secondary rounded-pill px-5" data-bs-target="close" data-bs-toggle="modal"><i class="fa-solid fa-xmark me-1" style="color: #ffffff;"></i>Avbryt</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+
 
     
 </body>

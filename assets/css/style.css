@@ -537,7 +537,7 @@ span {
 }
 
 
-.btn-light {
+.btn-dark {
   background-color: #F7931D !important;
   border-color: #F7931D !important;
   color: white;
@@ -547,7 +547,7 @@ span {
   max-width: 10rem;
 }
 
-.btn-light:hover {
+.btn-dark:hover {
   background-color: #bf6211;
   border-color: #bf6211;
   color: white;

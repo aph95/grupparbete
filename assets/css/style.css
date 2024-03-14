@@ -1,45 +1,45 @@
 /*General buttons*/
-.btn-primary{
+.btn-darkblue{
   background-color: #2B274D;
   border: none;
 }
 
-.btn-primary:hover{
+.btn-darkblue:hover{
   background-color: #555082;
   border: none;
 }
 
-.btn-primary:active{
+.btn-darkblue:active{
   background-color: #68619f;
   border: none;
 }
 
-.btn-secondary{
+.btn-orange{
   background-color: #F7931D;
   border: none;
 }
 
-.btn-secondary:hover{
+.btn-orange:hover{
   background-color: #D77A10;
   border: none;
 }
 
-.btn-secondary:active{
+.btn-orange:active{
   background-color: #bc6d13;
   border: none;
 }
 
-.btn-light{
+.btn-lightblue{
   background-color: #ACA7E6;
   border: none;
 }
 
-.btn-light:hover{
+.btn-lightblue:hover{
   background-color: #8682B6;
   border: none;
 }
 
-.btn-light:active{
+.btn-lightblue:active{
   background-color: #74709d;
   border: none;
 }
@@ -147,13 +147,6 @@ footer {
   background-image: linear-gradient(to left top, #3D2EB2, #B92637, #FFC33B);
 }
 
-.modal-body .btn-primary {
-  background-color: #ACA7E6;
-  border-color: #ACA7E6;
-  color: white;
-  max-width: 20rem;
-}
-
 .modal-body .btn:hover {
   transform: scale(1.03);
 }
@@ -172,19 +165,8 @@ footer {
   margin: 0 auto;
 }
 
-.modal-content .btn:active {
-  background-color: #C9D5FB;
-  border-color: #C9D5FB;
-}
 
-.modal-body .btn-danger {
-  background-color: #FC7B00;
-  border-color: #FC7B00;
-  color: black;
-  max-width: 20rem;
-}
-
-.modal-body .btn-secondary {
+.modal-body .btn-dark {
   background-color: #F2EBEB;
   border-color: #F2EBEB;
   color: black;
@@ -219,16 +201,8 @@ footer {
   background-image: linear-gradient(to right bottom, #3D2EB2, #B92637, #FFC33B);
 }
 
-.modal-body .btn-reg {
-  background-color: #FC7B00;
-  border-color: #FC7B00;
+.modal-body .btn-reg,.btn-login {
   color: white;
-  max-width: 20rem;
-}
-
-.modal-body .btn-login {
-  background-color: #ACA7E6;
-  border-color: #ACA7E6;
 }
 
 

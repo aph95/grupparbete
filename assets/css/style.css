@@ -1,45 +1,45 @@
 /*General buttons*/
-.btn-darkblue{
+.btn-primary{
   background-color: #2B274D;
   border: none;
 }
 
-.btn-darkblue:hover{
+.btn-primary:hover{
   background-color: #555082;
   border: none;
 }
 
-.btn-darkblue:active{
+.btn-primary:active{
   background-color: #68619f;
   border: none;
 }
 
-.btn-orange{
+.btn-secondary{
   background-color: #F7931D;
   border: none;
 }
 
-.btn-orange:hover{
+.btn-secondary:hover{
   background-color: #D77A10;
   border: none;
 }
 
-.btn-orange:active{
+.btn-secondary:active{
   background-color: #bc6d13;
   border: none;
 }
 
-.btn-lightblue{
+.btn-light{
   background-color: #ACA7E6;
   border: none;
 }
 
-.btn-lightblue:hover{
+.btn-light:hover{
   background-color: #8682B6;
   border: none;
 }
 
-.btn-lightblue:active{
+.btn-light:active{
   background-color: #74709d;
   border: none;
 }
@@ -67,6 +67,7 @@ nav a {
 main {
   font-family: "greycliff-cf", sans-serif;
 }
+
 
 .nav-link.active{
   border-bottom: 1px solid;
@@ -138,9 +139,6 @@ footer {
   transform: translate(-50%, -50%);
 }
 
-.login-text {
-  color:black;
-}
 
 
 /*LOG IN*/
@@ -565,7 +563,7 @@ span {
 }
 
 
-.btn-light {
+.btn-dark {
   background-color: #F7931D !important;
   border-color: #F7931D !important;
   color: white;
@@ -575,7 +573,7 @@ span {
   max-width: 10rem;
 }
 
-.btn-light:hover {
+.btn-dark:hover {
   background-color: #bf6211;
   border-color: #bf6211;
   color: white;

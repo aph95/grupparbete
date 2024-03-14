@@ -1,45 +1,45 @@
 /*General buttons*/
-.btn-primary{
+.btn-darkblue{
   background-color: #2B274D;
   border: none;
 }
 
-.btn-primary:hover{
+.btn-darkblue:hover{
   background-color: #555082;
   border: none;
 }
 
-.btn-primary:active{
+.btn-darkblue:active{
   background-color: #68619f;
   border: none;
 }
 
-.btn-secondary{
+.btn-orange{
   background-color: #F7931D;
   border: none;
 }
 
-.btn-secondary:hover{
+.btn-orange:hover{
   background-color: #D77A10;
   border: none;
 }
 
-.btn-secondary:active{
+.btn-orange:active{
   background-color: #bc6d13;
   border: none;
 }
 
-.btn-light{
+.btn-lightblue{
   background-color: #ACA7E6;
   border: none;
 }
 
-.btn-light:hover{
+.btn-lightblue:hover{
   background-color: #8682B6;
   border: none;
 }
 
-.btn-light:active{
+.btn-lightblue:active{
   background-color: #74709d;
   border: none;
 }
@@ -67,7 +67,6 @@ nav a {
 main {
   font-family: "greycliff-cf", sans-serif;
 }
-
 
 .nav-link.active{
   border-bottom: 1px solid;
@@ -139,6 +138,9 @@ footer {
   transform: translate(-50%, -50%);
 }
 
+.login-text {
+  color:black;
+}
 
 
 /*LOG IN*/

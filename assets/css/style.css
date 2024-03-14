@@ -1,3 +1,49 @@
+/*General buttons*/
+.btn-primary{
+  background-color: #2B274D;
+  border: none;
+}
+
+.btn-primary:hover{
+  background-color: #555082;
+  border: none;
+}
+
+.btn-primary:active{
+  background-color: #68619f;
+  border: none;
+}
+
+.btn-secondary{
+  background-color: #F7931D;
+  border: none;
+}
+
+.btn-secondary:hover{
+  background-color: #D77A10;
+  border: none;
+}
+
+.btn-secondary:active{
+  background-color: #bc6d13;
+  border: none;
+}
+
+.btn-light{
+  background-color: #ACA7E6;
+  border: none;
+}
+
+.btn-light:hover{
+  background-color: #8682B6;
+  border: none;
+}
+
+.btn-light:active{
+  background-color: #74709d;
+  border: none;
+}
+
 /* Index+about */
 
 body {
@@ -22,42 +68,12 @@ main {
   font-family: "greycliff-cf", sans-serif;
 }
 
-nav li a :active {
-  text-decoration-line: underline;
+
+.nav-link.active{
+  border-bottom: 1px solid;
+  padding-bottom: 3px;
 }
 
-#login-btn i, .login-text {
-  color: black;
-}
-
-#login-btn {
-  background-color: #ACA7E6;
-  border-color: #ACA7E6;
-}
-
-#login-btn:hover {
-  background-color: #8682b6;
-  border-color: #8682b6;
-}
-
-.btn {
-  background-color: #2B274D;
-  border-color: #2B274D;
-}
-
-.btn-primary {
-  background-color: #F7931D;
-  border-color: #F7931D;
-  color: black;
-  max-width: 6rem;
-}
-
-.btn-primary,
-#register-btn:hover {
-  background-color: #F7931D;
-  border-color: #F7931D;
-  color: black;
-}
 
 .online {
   font-size: 1rem;
@@ -121,11 +137,6 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.index-reg-btn:hover, .index-sub-btn:hover {
-  background-color: #F7931D;
-  border-color: #F7931D;
 }
 
 
@@ -520,14 +531,16 @@ span {
 }
 
 .profile-right .message:hover {
-  background-color: #413d66;
+  background-color: #555082;
   color:white;
 }
 
 .profile-right .add-friend:hover {
-  background-color: #e77e07;
+  background-color: #d77a10;
   color: white;
 }
+
+
 
 /* Events */
 

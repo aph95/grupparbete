@@ -1,47 +1,62 @@
-/*General buttons*/
-.btn-primary{
+/* General buttons */
+
+.text-white {
+  color:white;
+}
+
+.text-black {
+  color:black;
+}
+
+.btn-darkblue{
   background-color: #2B274D;
   border: none;
+  color:white;
 }
 
-.btn-primary:hover{
+.btn-darkblue:hover{
   background-color: #555082;
   border: none;
+  color:white;
 }
 
-.btn-primary:active{
+.btn-darkblue:active{
   background-color: #68619f;
   border: none;
+  color:white;
 }
 
-.btn-secondary{
+.btn-orange{
   background-color: #F7931D;
   border: none;
 }
 
-.btn-secondary:hover{
+.btn-orange:hover{
   background-color: #D77A10;
   border: none;
 }
 
-.btn-secondary:active{
+.btn-orange:active{
   background-color: #bc6d13;
   border: none;
 }
 
-.btn-light{
+.btn-lightblue{
   background-color: #ACA7E6;
   border: none;
+  color:black;
 }
 
-.btn-light:hover{
+.btn-lightblue:hover{
   background-color: #8682B6;
   border: none;
+  color:black;
 }
 
-.btn-light:active{
+.btn-lightblue:active{
   background-color: #74709d;
   border: none;
+  color:black;
 }
 
 /* Index+about */
@@ -512,33 +527,7 @@ span {
   color: black;
 }
 
-.profile-contact .message {
-  background-color: #2b274d;
-  color: white;
-}
 
-.profile-contact .add-friend {
-  background-color: #F7931D;
-  color: white;
-}
-
-.profile-contact .fa-user-plus, .profile-contact .fa-message{
-  color: white;
-}
-
-.profile-right .fa-user-plus, .fa-message {
-  pointer-events: none;
-}
-
-.profile-right .message:hover {
-  background-color: #555082;
-  color:white;
-}
-
-.profile-right .add-friend:hover {
-  background-color: #d77a10;
-  color: white;
-}
 
 
 

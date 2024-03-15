@@ -1,29 +1,18 @@
-/* General buttons */
-
-.text-white {
-  color:white;
-}
-
-.text-black {
-  color:black;
-}
-
+/*General buttons*/
 .btn-darkblue{
   background-color: #2B274D;
   border: none;
-  color:white;
 }
 
 .btn-darkblue:hover{
   background-color: #555082;
   border: none;
-  color:white;
 }
 
 .btn-darkblue:active{
-  background-color: #68619f !important;
+  background-color: #68619f;
   border: none;
-  color:white !important;
+  color:white;
 }
 
 .btn-orange{
@@ -37,30 +26,22 @@
 }
 
 .btn-orange:active{
-  background-color: #bc6d13 !important;
+  background-color: #bc6d13;
   border: none;
 }
 
 .btn-lightblue{
   background-color: #ACA7E6;
   border: none;
-  color:black;
 }
 
 .btn-lightblue:hover{
   background-color: #8682B6;
   border: none;
-  color:black;
 }
 
 .btn-lightblue:active{
-  background-color: #74709d !important;
-  border: none;
-  color:black;
-}
-
-.btn-warning {
-  background-color: #F7931D;
+  background-color: #74709d;
   border: none;
 }
 
@@ -89,7 +70,7 @@ main {
 }
 
 
-.masthead .nav-link.active{
+.nav-link.active{
   border-bottom: 1px solid;
   padding-bottom: 3px;
 }
@@ -167,8 +148,15 @@ footer {
   background-image: linear-gradient(to left top, #3D2EB2, #B92637, #FFC33B);
 }
 
+.modal-body .btn-primary {
+  background-color: #ACA7E6;
+  border-color: #ACA7E6;
+  color: white;
+  max-width: 20rem;
+}
+
 .modal-body .btn:hover {
-  transform: scale(1.02);
+  transform: scale(1.03);
 }
 
 .form-label {
@@ -183,6 +171,25 @@ footer {
   width: 26rem;
   height: 45rem;
   margin: 0 auto;
+}
+
+.modal-content .btn:active {
+  background-color: #C9D5FB;
+  border-color: #C9D5FB;
+}
+
+.modal-body .btn-danger {
+  background-color: #FC7B00;
+  border-color: #FC7B00;
+  color: black;
+  max-width: 20rem;
+}
+
+.modal-body .btn-secondary {
+  background-color: #F2EBEB;
+  border-color: #F2EBEB;
+  color: black;
+  max-width: 20rem;
 }
 
 .or {
@@ -213,19 +220,16 @@ footer {
   background-image: linear-gradient(to right bottom, #3D2EB2, #B92637, #FFC33B);
 }
 
-.btn-secondary_login{
-  background-color: #F2EBEB;
-  border-color:  #F2EBEB;
+.modal-body .btn-reg {
+  background-color: #FC7B00;
+  border-color: #FC7B00;
+  color: white;
+  max-width: 20rem;
 }
-.btn-secondary_login:hover{
-  background-color: #dbd4d4; 
-  color: black;
-  border-color: #dbd4d4;
-}
-.btn-secondary_login:active{
-  background-color: #c6c0c0 !important;
-  color: black !important;
-  border-color: none !important;
+
+.modal-body .btn-login {
+  background-color: #ACA7E6;
+  border-color: #ACA7E6;
 }
 
 
@@ -362,6 +366,16 @@ span {
   margin-left: auto;
 }
 
+.login-button .btn {
+  background-color: #2b274d;
+  border-color: #2b274d;
+}
+
+.login-button .btn:hover {
+  background-color: #4c4c53;
+  border-color: #4c4c53;
+}
+
 .body-logged-in-bg {
   background-color: #FAF9F6;
 }
@@ -398,16 +412,13 @@ span {
 }
 
 .card-body {
-  background-color: #DFE3F4;
+  background-color: #DFE3F4
 }
 
 .card p {
   margin-top: 1rem;
+  font-size: 0.7rem;
   margin: 0;
-}
-
-.card li {
-  font-size: 0.8rem;
 }
 
 /* Profile */
@@ -502,14 +513,35 @@ span {
   color: black;
 }
 
-.profile-contact .fa-message, .profile-contact .fa-user-plus {
+.profile-contact .message {
+  background-color: #2b274d;
   color: white;
-  pointer-events: none; 
 }
 
-.profile-contact .btn-orange {
+.profile-contact .add-friend {
+  background-color: #F7931D;
   color: white;
 }
+
+.profile-contact .fa-user-plus, .profile-contact .fa-message{
+  color: white;
+}
+
+.profile-right .fa-user-plus, .fa-message {
+  pointer-events: none;
+}
+
+.profile-right .message:hover {
+  background-color: #555082;
+  color:white;
+}
+
+.profile-right .add-friend:hover {
+  background-color: #d77a10;
+  color: white;
+}
+
+
 
 /* Events */
 
@@ -528,9 +560,7 @@ span {
 
 .btn-info:active {
   background-color: #2B274D;
-
 }
-
 
 .btn-dark {
   background-color: #F7931D !important;

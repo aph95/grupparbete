@@ -21,7 +21,7 @@
 }
 
 .btn-darkblue:active{
-  background-color: #68619f;
+  background-color: #68619f !important;
   border: none;
   color:white;
 }
@@ -37,7 +37,7 @@
 }
 
 .btn-orange:active{
-  background-color: #bc6d13;
+  background-color: #bc6d13 !important;
   border: none;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .btn-lightblue:active{
-  background-color: #74709d;
+  background-color: #74709d !important;
   border: none;
   color:black;
 }
@@ -167,15 +167,8 @@ footer {
   background-image: linear-gradient(to left top, #3D2EB2, #B92637, #FFC33B);
 }
 
-.modal-body .btn-primary {
-  background-color: #ACA7E6;
-  border-color: #ACA7E6;
-  color: white;
-  max-width: 20rem;
-}
-
 .modal-body .btn:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 .form-label {
@@ -190,25 +183,6 @@ footer {
   width: 26rem;
   height: 45rem;
   margin: 0 auto;
-}
-
-.modal-content .btn:active {
-  background-color: #C9D5FB;
-  border-color: #C9D5FB;
-}
-
-.modal-body .btn-danger {
-  background-color: #FC7B00;
-  border-color: #FC7B00;
-  color: black;
-  max-width: 20rem;
-}
-
-.modal-body .btn-secondary {
-  background-color: #F2EBEB;
-  border-color: #F2EBEB;
-  color: black;
-  max-width: 20rem;
 }
 
 .or {
@@ -239,16 +213,19 @@ footer {
   background-image: linear-gradient(to right bottom, #3D2EB2, #B92637, #FFC33B);
 }
 
-.modal-body .btn-reg {
-  background-color: #FC7B00;
-  border-color: #FC7B00;
-  color: white;
-  max-width: 20rem;
+.btn-secondary_login{
+  background-color: #F2EBEB;
+  border-color:  #F2EBEB;
 }
-
-.modal-body .btn-login {
-  background-color: #ACA7E6;
-  border-color: #ACA7E6;
+.btn-secondary_login:hover{
+  background-color: #dbd4d4; 
+  color: black;
+  border-color: #dbd4d4;
+}
+.btn-secondary_login:active{
+  background-color: #c6c0c0 !important;
+  color: black !important;
+  border-color: none !important;
 }
 
 

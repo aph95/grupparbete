@@ -23,7 +23,7 @@
 .btn-darkblue:active{
   background-color: #68619f !important;
   border: none;
-  color:white;
+  color:white !important;
 }
 
 .btn-orange{

@@ -421,13 +421,16 @@ span {
 }
 
 .card-body {
-  background-color: #DFE3F4
+  background-color: #DFE3F4;
 }
 
 .card p {
   margin-top: 1rem;
-  font-size: 0.7rem;
   margin: 0;
+}
+
+.card li {
+  font-size: 0.8rem;
 }
 
 /* Profile */
@@ -520,6 +523,15 @@ span {
 /*Alice*/
 .answer {
   color: black;
+}
+
+.profile-contact .fa-message, .profile-contact .fa-user-plus {
+  color: white;
+  pointer-events: none; 
+}
+
+.profile-contact .btn-orange {
+  color: white;
 }
 
 /* Events */

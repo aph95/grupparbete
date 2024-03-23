@@ -1,164 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pluggportalen</title>
-  <!-- Bootstrap libraries. -->
-  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../assets/css/all.min.css">
-  <!-- Favicon. -->
-  <link rel="icon" type="image/x-icon" href="../images/logo.svg">
-  <!-- CSS stylesheet. -->
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <!-- Poppins font family. -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <!-- Greycliff font family. -->
-  <link rel="stylesheet" href="https://use.typekit.net/anl1bwo.css">
-  <!-- Temporary internal stylesheet. -->
-  <style>
-    .masthead {
-      background-image:
-        linear-gradient(90deg, rgba(255, 195, 59, 1) 0%, rgba(185, 38, 55, 0.6811099439775911) 44%, rgba(176, 83, 204, 1) 100%),
-        url(../images/background_about.webp);
-      background-size: cover;
-      background-position: center;
-      min-height: 90vh;
-      height: 500px;
-      position: relative;
-    }
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pluggportalen</title>
+    <!-- Bootstrap libraries. -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+    <!-- Favicon. -->
+    <link rel="icon" type="image/x-icon" href="../images/logo.svg">
+    <!-- CSS stylesheet. -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Poppins font family. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Greycliff font family. -->
+    <link rel="stylesheet" href="https://use.typekit.net/anl1bwo.css">
+    <!-- Temporary internal stylesheet. -->
+    <style>
+        .masthead {
+            background-image:
+                linear-gradient(90deg, rgba(255, 195, 59, 1) 0%, rgba(185, 38, 55, 0.6811099439775911) 44%, rgba(176, 83, 204, 1) 100%),
+                url(../images/background_about.webp);
+            background-size: cover;
+            background-position: center;
+            min-height: 90vh;
+            height: 500px;
+            position: relative;
+        }
 
-    body {
-      background-color: #FAF9F6;
-    }
-  </style>
+        body {
+            background-color: #FAF9F6;
+        }
+    </style>
 </head>
 
 <body>
-  <header>
-    <div class="masthead">
-      <div class="d-flex">
-      </div>
-      <nav class="navbar-light p-5">
-        <ul class="nav justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link me-5" aria-current="page" href="../index.html#how-it-works">Så här fungerar det</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active fw-semibold me-5" href="">Om oss</a>
-          </li>
-          <li class="nav-item">
-            <a class="btn btn-lightblue" href="pages/login.html" id="login-btn"><span class="text-black"><i
-                class="fa-solid fa-right-to-bracket pe-2"></i>Logga
-                in</span></a>
-          </li>
-        </ul>
-      </nav>
-      <div class="p-5 ms-5" id="jumbotron">
-        <a href=""><img src="../images/logo.svg" height="150" alt="logo"></a>
-        <h1 class="display-5 fw-bold text-white">Pluggportalen</h1>
-        <p class="col-md-8 fs-4 text-white">Gör studierna till en gemensam resa!</p>
-        <div class="row">
-          <div class="col mb-4">
-            <a class="btn btn-darkblue btn-lg text-white" href="pages/register.html" id="register-btn">Registrera
-              dig</a>
-          </div>
+    <!--Jumbotron-->
+    <header>
+        <div class="masthead">
+            <div class="d-flex">
+            </div>
+            <!--Navigation-->
+            <nav class="navbar-light p-5">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link me-5" aria-current="page" href="../index.html#how-it-works">Så här fungerar
+                            det</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold me-5" href="">Om oss</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-lightblue" href="login.html" id="login-btn"><span class="text-black"><i
+                                    class="fa-solid fa-right-to-bracket pe-2"></i>Logga
+                                in</span></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="p-5 ms-5" id="jumbotron">
+                <a href=""><img src="../images/logo.svg" height="150" alt="logo"></a>
+                <h1 class="display-5 fw-bold text-white">Pluggportalen</h1>
+                <p class="col-md-8 fs-4 text-white">Gör studierna till en gemensam resa!</p>
+                <div class="row">
+                    <div class="col mb-4">
+                        <a class="btn btn-darkblue btn-lg text-white" href="register.html" id="register-btn">Registrera
+                            dig</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-sm btn-danger" disabled><span class="logged-in">●</span>
+                            859 elever
+                            online</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row">
-          <div class="col">
-            <button type="button" class="btn btn-sm btn-danger" disabled><span class="logged-in">●</span> 859 elever
-              online</button>
-          </div>
+    </header>
+    <div class="divider"></div>
+    <!--Main content-->
+    <main>
+        <h1 class="text-center fs-1 fw-bold lh-1 m-5">Vår vision är kamratskap</h1>
+        <div class="text-center">
+            <img src="../images/about_illustration.svg" style="width:20rem;" alt="illustration"
+                class="friendship-illustration">
         </div>
-      </div>
-    </div>
-  </header>
-  <div class="divider"></div>
-  <main>
-    <h1 class="text-center fs-1 fw-bold lh-1 m-5">Vår vision är kamratskap</h1>
-    <div class="text-center">
-      <img src="../images/about_illustration.svg" style="width:20rem;" alt="illustration" class="friendship-illustration">
-    </div>
-    <div class="container p-5 mt-4">
-      <div class="row">
-        <div class="col-4" style="margin-left:auto;">
-          <h5 class="fw-bold">Vår målsättning</h5>
-          <p class="pb-3">Vi är inte bara en studieplattform; vi är din guide till framgång. På Pluggportalen handlar
-            allt
-            om
-            att
-            hitta din perfekta pluggpartner för att tillsammans erövra studielivet. Vi tror på kraften i samarbete och
-            gemenskap för att uppnå dina studiemål. Med oss kan du förvandla studierna från en ensam kamp till en
-            spännande
-            resa mot framgång tillsammans med likasinnade.</p>
+        <div class="container p-5 mt-4">
+            <div class="row">
+                <div class="col-4" style="margin-left:auto;">
+                    <h5 class="fw-bold">Vår målsättning</h5>
+                    <p class="pb-3">Vi är inte bara en studieplattform; vi är din guide till framgång. På Pluggportalen
+                        handlar
+                        allt
+                        om
+                        att
+                        hitta din perfekta pluggpartner för att tillsammans erövra studielivet. Vi tror på kraften i
+                        samarbete och
+                        gemenskap för att uppnå dina studiemål. Med oss kan du förvandla studierna från en ensam kamp
+                        till en
+                        spännande
+                        resa mot framgång tillsammans med likasinnade.</p>
+                </div>
+                <div class="col-4" style="margin-right:auto;">
+                    <h5 class="fw-bold">Varför Pluggportalen?</h5>
+                    <p class="pb-3">
+                        Gemenskap: Tillsammans bygger vi starka band och delar vår gemensamma studieresa. Effektivitet:
+                        Med vårt
+                        samarbete blir vi starkare och når våra mål snabbare och mer effektivt. Motivation: Här kan du
+                        inspirera
+                        andra och själv bli inspirerad av dina pluggkompisar. Målinriktat: Genom skräddarsydda
+                        matchningar ser vi
+                        till att du får den bästa studieupplevelsen och når dina mål.</p>
+                </div>
+                <div class="text-center pb-5 mt-5">
+                    <a class="btn btn-darkblue btn-lg index-reg-btn" href="register.html" style="color:white;">Gå med i
+                        Pluggportalen</a>
+                </div>
+            </div>
         </div>
-        <div class="col-4" style="margin-right:auto;">
-          <h5 class="fw-bold">Varför Pluggportalen?</h5>
-          <p class="pb-3">
-            Gemenskap: Tillsammans bygger vi starka band och delar vår gemensamma studieresa. Effektivitet: Med vårt
-            samarbete blir vi starkare och når våra mål snabbare och mer effektivt. Motivation: Här kan du inspirera
-            andra och själv bli inspirerad av dina pluggkompisar. Målinriktat: Genom skräddarsydda matchningar ser vi
-            till att du får den bästa studieupplevelsen och når dina mål.</p>
-        </div>
-        <div class="text-center pb-5 mt-5">
-          <a class="btn btn-darkblue btn-lg index-reg-btn" href="register.html" style="color:white;">Gå med i Pluggportalen</a>
-        </div>
-      </div>
-    </div>
-  </main>
-  <div class="footer-background">
-    <div class="container">
-      <footer class="py-5">
-        <div class="row">
-          <div class="col-6 col-md-2 mb-3">
-            <h5 class="fw-bold"><i class="fa-solid fa-layer-group"></i> Resurser</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-muted">Om oss</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Skicka feedback</a></li>
+    </main>
+    <div class="footer-background">
+        <div class="container">
+            <!--Footer-->
+            <footer class="py-5">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5 class="fw-bold"><i class="fa-solid fa-layer-group"></i> Resurser</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-muted">Om oss</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Skicka feedback</a>
+                            </li>
 
-            </ul>
-            <a href="#"><img src="../images/logo_gray.svg" height="100" alt="logo"></a>
-          </div>
-          <div class="col-6 col-md-2 mb-3">
-            <h5 class="fw-bold"><i class="fa-solid fa-arrow-up-right-from-square"></i> Hitta direkt</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sekretesspolicy</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">In English</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cookies</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Personuppgifter</a></li>
-            </ul>
-          </div>
-          <div class="col-md-5 offset-md-1 mb-3">
-            <form>
-              <h5 class="fw-bold">Prenumerera på vårt nyhetsbrev!</h5>
-              <p>Månatlig sammanfattning av det nya och spännande från oss.</p>
-              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                <label for="newsletter1" class="visually-hidden">E-post</label>
-                <input id="newsletter1" type="text" class="form-control" placeholder="E-post">
-                <button class="btn btn-secondary index-sub-btn" type="button">Prenumerera</button>
-              </div>
-            </form>
-          </div>
+                        </ul>
+                        <a href="#"><img src="../images/logo_gray.svg" height="100" alt="logo"></a>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5 class="fw-bold"><i class="fa-solid fa-arrow-up-right-from-square"></i> Hitta direkt</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sekretesspolicy</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">In English</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cookies</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Personuppgifter</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h5 class="fw-bold">Prenumerera på vårt nyhetsbrev!</h5>
+                            <p>Månatlig sammanfattning av det nya och spännande från oss.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">E-post</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="E-post">
+                                <button class="btn btn-darkblue index-sub-btn" type="button">Prenumerera</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4">
+                    <p>&copy; 2024 Pluggportalen</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="mr-3"><a href="#"><i class="fab fa-instagram-square"
+                                    style="font-size: 2rem; color:#21252C; margin-right: 10px;"></i></a></li>
+                        <li class="mr-3"><a href="#"><i class="fab fa-facebook-square"
+                                    style="font-size: 2rem; color:#21252C; margin-right: 10px;"></i></a></li>
+                        <li class="mr-3"><a href="#"><i class="fab fa-tiktok"
+                                    style="font-size: 2rem; color:#21252C"></i></a></li>
+                    </ul>
+                </div>
+            </footer>
         </div>
-        <hr>
-        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4">
-          <p>&copy; 2024 Pluggportalen</p>
-          <ul class="list-unstyled d-flex">
-            <li class="mr-3"><a href="#"><i class="fab fa-instagram-square"
-                  style="font-size: 2rem; color:#21252C; margin-right: 10px;"></i></a></li>
-            <li class="mr-3"><a href="#"><i class="fab fa-facebook-square"
-                  style="font-size: 2rem; color:#21252C; margin-right: 10px;"></i></a></li>
-            <li class="mr-3"><a href="#"><i class="fab fa-tiktok" style="font-size: 2rem; color:#21252C"></i></a></li>
-          </ul>
-        </div>
-      </footer>
     </div>
-  </div>
 </body>
 
 </html>

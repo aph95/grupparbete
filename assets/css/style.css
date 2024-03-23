@@ -15,7 +15,7 @@
 }
 
 .btn-darkblue:hover {
-  background-color: #555082;
+  background-color: #555082 !important;
   border: none;
   color: white;
 }
@@ -64,18 +64,18 @@
   border: none;
 }
 
-.btn-secondary_login{
+.btn-secondary_login {
   background-color: #F2EBEB;
-  border-color:  #F2EBEB;
+  border-color: #F2EBEB;
 }
 
-.btn-secondary_login:hover{
-  background-color: #dbd4d4; 
+.btn-secondary_login:hover {
+  background-color: #dbd4d4;
   color: black;
   border-color: #dbd4d4;
 }
 
-.btn-secondary_login:active{
+.btn-secondary_login:active {
   background-color: #c6c0c0 !important;
   color: black !important;
   border-color: none !important;
@@ -179,7 +179,7 @@ footer {
 
 /* log in+register */
 .backround-login {
-  height: 100vh;
+  min-height: 100vh;
   background-image: linear-gradient(to left top, #3D2EB2, #B92637, #FFC33B);
 }
 
@@ -226,6 +226,18 @@ footer {
 .backround-register {
   min-height: 100vh;
   background-image: linear-gradient(to right bottom, #3D2EB2, #B92637, #FFC33B);
+}
+
+.modal-body .btn-reg {
+  background-color: #FC7B00;
+  border-color: #FC7B00;
+  color: white;
+  max-width: 20rem;
+}
+
+.modal-body .btn-login {
+  background-color: #ACA7E6;
+  border-color: #ACA7E6;
 }
 
 
@@ -320,6 +332,10 @@ span {
 
 /* Home page */
 
+.home-col a {
+  text-decoration: none;
+}
+
 .shuffle-button {
   color: white;
   background-color: #2B274D;
@@ -343,10 +359,6 @@ span {
   background-clip: text;
   color: transparent;
   padding: 5px;
-}
-
-.card-title {
-  font-size: .8rem;
 }
 
 .card-body {
@@ -384,11 +396,6 @@ span {
   color: black;
 }
 
-.profile-left i:hover,
-.profile-right i:hover {
-  color: #F7931D;
-}
-
 .profile-right {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -403,13 +410,6 @@ span {
   line-height: 1.4rem;
 }
 
-.fa-location-dot,
-.fa-graduation-cap,
-.fa-heart,
-.fa-briefcase {
-  pointer-events: none;
-}
-
 /* Profile edit*/
 
 .edit-profile-heading {
@@ -419,7 +419,6 @@ span {
 .edit-profile {
   background: linear-gradient(to right bottom, #4f40be, #ACA7E6, #cad0eb);
   border-radius: 20px;
-  ;
 }
 
 .form-control:valid {
@@ -449,6 +448,14 @@ span {
   text-decoration: none;
   background: none;
   border: none;
+}
+
+.delete-btn {
+    color:#DC3545;
+}
+
+.delete-btn:hover {
+    color:#8a131f;
 }
 
 /* pop up for delete account*/
@@ -497,7 +504,7 @@ span {
 .foot li {
   list-style: none;
   display: inline;
-  margin-right:2rem;
+  margin-right: 2rem;
 }
 
 /* Alice profile */

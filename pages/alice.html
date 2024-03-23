@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="sv">
 
@@ -16,8 +18,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <!-- Greycliff font family. -->
     <link rel="stylesheet" href="https://use.typekit.net/anl1bwo.css">
 </head>
@@ -25,7 +27,6 @@
 <body>
     <!--Banner-->
     <header>
-        <div>
             <div class="banner py-2 px-4">
                 <a href="home.html">
                     <img src="../images/logo.svg" height="95" alt="logo">
@@ -37,15 +38,18 @@
                     </span>
                 </i>
                 <div class="d-flex flex-column mb-3">
-                    <div><a class="btn btn-darkblue btn-sm mt-3 mb-1 ms-3" href="../index.html"><i
-                                class="fa-solid fa-right-from-bracket me-1"></i>Logga ut</a></div>
+                    <form action="../assets/functions/logout.html" method="post">
+                        <div class="login-button"><button type="submit"
+                                class="btn btn-darkblue btn-sm mt-3 mb-1 ms-3"><i
+                                    class="fa-solid fa-right-from-bracket me-1"></i>Logga ut</button></div>
+                    </form>
                     <div class="online mt-3"><span class="badge text-bg-dark fw-light"><span
-                                class="logged-in me-1">●</span>859
+                                class="logged-in-ellipsis me-1">●</span>859
                             elever
-                            online</span></div>
+                            online</span>
+                    </div>
                 </div>
             </div>
-        </div>
     </header>
     <div class="row g-0">
         <!-- Navigation -->
@@ -111,13 +115,14 @@
         </nav>
         <!-- Main -->
         <main class="col p-3">
-                <a href="/pages/home.html" ><i class="fa-solid fa-arrow-left ms-5 mt-4" style="color: black; font-size: 2rem;"></i></a>
+            <a href="/pages/home.html"><i class="fa-solid fa-arrow-left ms-5 mt-4"
+                    style="color: black; font-size: 2rem;"></i></a>
             <div class="container col-10">
                 <div class="row justify-content-center">
                     <!--Left side of the profile-->
                     <div class="profile-left col-4 py-4">
                         <div class="text-center">
-                            <img src="../images/user_image_1.webp" class="rounded-circle shadow-1-strong mb-3 text-center"
+                            <img src="../images/alice.webp" class="rounded-circle shadow-1-strong mb-3 text-center"
                                 width="200" height="200" alt="profilbild">
                             <p class="fw-bold fs-5">Alice Svensson</p>
                             <p class="me-4 mb-1"><i class="fa-solid fa-location-dot"></i> Uppsala</p>
@@ -127,26 +132,34 @@
                                 <a href="#"><i class="fa-brands fa-square-instagram me-2"></i></a>
                             </div>
                         </div>
-                    </div>                   
+                    </div>
                     <!--Right side of the profile-->
                     <div class="profile-right col-5 p-3">
                         <div class="container mb-1">
-                           <p class="text-center mt-1 mb-4">Sprallig tjej som älskar att kasta mig in i livets äventyr! När jag inte är upptagen med att göra volter, 
-                            kan du hitta mig vid middagsbordet där jag tar del av både mat och skratt med mina fantastiska vänner.</p>               
+                            <p class="text-center mt-4 mb-4">Sprallig tjej som älskar att kasta mig in i livets äventyr!
+                                När jag inte är upptagen med att göra volter,
+                                kan du hitta mig vid middagsbordet där jag tar del av både mat och skratt med mina
+                                fantastiska vänner.</p>
                             <div class="profile-information">
-                                <p class="fw-bolder"><i class="fa-solid fa-briefcase me-1"></i> Erfarenheter:<span class="answer fw-light ms-1">Praktik på socialtjänsten</span></p>
-                                <p class="fw-bolder"><i class="fa-solid fa-heart me-1"></i> Intressen:<span class="answer fw-light ms-1">Gymnastik, Virka och Matlagning</span></p>
-                            <hr class="mx-5 my-3">
-                            <div>
-                                <p class="fw-bold"> Skola: <span class="answer fw-light ms-1">Uppsala Universitet</span></p>
-                                <p class="fw-bold"> Termin:<span class="answer fw-light ms-1">4</span></p>
-                                <p class="fw-bold"> Examensår:<span class="answer fw-light ms-1">2025</span></p>
-                                <p class="fw-bold"> Ämnen:<span class="answer fw-light ms-1">Psykologi, Sociologi och Pedagogik</span></p>
-                            </div>
+                                <p class="fw-bolder"><i class="fa-solid fa-briefcase me-1"></i> Erfarenheter:<span
+                                        class="answer fw-light ms-1">Praktik på socialtjänsten</span></p>
+                                <p class="fw-bolder"><i class="fa-solid fa-heart me-1"></i> Intressen:<span
+                                        class="answer fw-light ms-1">Gymnastik, Virka och Matlagning</span></p>
+                                <hr class="mx-5 my-3">
+                                <div>
+                                    <p class="fw-bold"> Skola: <span class="answer fw-light ms-1">Uppsala
+                                            Universitet</span></p>
+                                    <p class="fw-bold"> Termin:<span class="answer fw-light ms-1">4</span></p>
+                                    <p class="fw-bold"> Examensår:<span class="answer fw-light ms-1">2025</span></p>
+                                    <p class="fw-bold"> Ämnen:<span class="answer fw-light ms-1">Psykologi, Sociologi
+                                            och Pedagogik</span></p>
+                                </div>
                             </div>
                             <div class="profile-contact d-flex justify-content-center mt-4">
-                                <button class="btn-darkblue btn me-2" href="profile.html"><i class="fa-solid fa-message m-1"></i>Meddelande</button>
-                                <button class="btn btn-orange ms-2" href="#"></span><i class="fa-solid fa-user-plus m-1"></i>
+                                <button class="btn-darkblue btn me-2"><i
+                                        class="fa-solid fa-message m-1"></i>Meddelande</button>
+                                <button class="btn btn-orange ms-2"><i
+                                        class="fa-solid fa-user-plus m-1"></i>
                                     Lägg till vän</button>
                             </div>
                         </div>
@@ -154,49 +167,49 @@
                 </div>
             </div>
 
-                <!--Saved events-->
-                <div class="container text-center">
-                    <h5 class="mt-4 mb-1 fw-bold">Alice är intresserad av:</h5>
-                    <div class="events mt-3">
-                        <div class="row">
-                            <div class="d-flex justify-content-center mt-3">
-                                <div class="eventimage mx-2">
-                                    <img src="../images/event_img_8.webp" class="img-fluid rounded" width="300"
-                                        height="450" alt="Photo of event">
-                                    <div class="event-text text-center">
-                                        <h3 class="mb-3 fw-bold">Meet & Greet</h3>
-                                    </div>
-                                    <div class="event-button text-center">
-                                        <a class="btn btn-light mt-3 mb-3 pt-2 disabled" aria-disabled="true">Läs mer</a>
-                                    </div>
+            <!--Saved events-->
+            <div class="container text-center">
+                <h5 class="mt-5 mb-1 fw-bold">Alice är intresserad av:</h5>
+                <div class="events mt-3">
+                    <div class="row">
+                        <div class="d-flex justify-content-center mt-3">
+                            <div class="eventimage mx-2">
+                                <img src="../images/event_img_8.webp" class="img-fluid rounded" width="300" height="450"
+                                    alt="Photo of event">
+                                <div class="event-text text-center">
+                                    <h3 class="mb-3 fw-bold">Meet & Greet</h3>
                                 </div>
-                                <div class="eventimage ms-4 mx-2">
-                                    <img src="../images/event_img_2.webp" class="img-fluid rounded" width="300"
-                                        height="450" alt="Photo of event">
-                                    <div class="event-text text-center">
-                                        <h3 class="mb-3 fw-bold">Språkcafé</h3>
-                                    </div>
-                                    <div class="event-button text-center">
-                                        <a class="btn btn-light mt-3 mb-3 pt-2 disabled" aria-disabled="true">Läs mer</a>
-                                    </div>
+                                <div class="event-button text-center">
+                                    <a class="btn btn-light mt-3 mb-3 pt-2 disabled" aria-disabled="true">Läs mer</a>
                                 </div>
-                                <div class="eventimage ms-4 mx-2">
-                                    <img src="../images/event_img_7.webp" class="img-fluid rounded" width="300"
-                                        height="450" alt="Photo of event">
-                                    <div class="event-text text-center">
-                                        <h3 class="mb-3 fw-bold">Mindful Art</h3>
-                                    </div>
-                                    <div class="event-button text-center">
-                                        <a class="btn btn-light mt-3 mb-3 pt-2 disabled" aria-disabled="true">Läs mer</a>
-                                    </div>
+                            </div>
+                            <div class="eventimage ms-4 mx-2">
+                                <img src="../images/event_img_2.webp" class="img-fluid rounded" width="300" height="450"
+                                    alt="Photo of event">
+                                <div class="event-text text-center">
+                                    <h3 class="mb-3 fw-bold">Språkcafé</h3>
+                                </div>
+                                <div class="event-button text-center">
+                                    <a class="btn btn-light mt-3 mb-3 pt-2 disabled" aria-disabled="true">Läs mer</a>
+                                </div>
+                            </div>
+                            <div class="eventimage ms-4 mx-2">
+                                <img src="../images/event_img_7.webp" class="img-fluid rounded" width="300" height="450"
+                                    alt="Photo of event">
+                                <div class="event-text text-center">
+                                    <h3 class="mb-3 fw-bold">Mindful Art</h3>
+                                </div>
+                                <div class="event-button text-center">
+                                    <a class="btn btn-light mt-3 mb-3 pt-2 disabled" aria-disabled="true">Läs mer</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                </div>
+            </div>
 
         </main>
-        <!-- Aside -->
+        <!-- Aside-->
         <aside class="aside-logged-in col-2">
             <!--Friends-->
             <div class="sticky-top">
@@ -214,10 +227,11 @@
                 <!--Calendar-->
                 <div class="card mt-4 mx-auto" style="width: 10rem;">
                     <div class="card-header" style="background-color: #2B274D; color:white;">
-                        <p class="text-center"><i class="fa-solid fa-calendar-days me-1"></i>Kalender</p>
+                        <p class="text-center mb-1"><i class="fa-solid fa-calendar-days me-1"></i>Kalender</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item text-center">...</li>
+                        <li class="list-group-item text-center">
+                            Inget planerat                        </li>
                         <li class="list-group-item text-center pb-4" style="background-color:#ACA7E6;"></li>
                     </ul>
                 </div>
@@ -227,12 +241,14 @@
                         <p class="text-center"><i class="fa-solid fa-graduation-cap me-1"></i>Pluggmål</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item "><input class="form-check-input me-1" type="checkbox">Läsa PHP (Faraon)</li>
+                        <li class="list-group-item "><input class="form-check-input me-1" type="checkbox">Läsa PHP
+                            (Faraon)</li>
                         <li class="list-group-item"><input class="form-check-input me-1" type="checkbox">Skriva rapport
                         </li>
                         <li class="list-group-item"><input class="form-check-input me-1" type="checkbox">Designprojekt
                         </li>
-                        <li class="list-group-item"><input class="form-check-input me-1" type="checkbox">PHP intensivkurs
+                        <li class="list-group-item"><input class="form-check-input me-1" type="checkbox">PHP
+                            intensivkurs
                         </li>
                         <li class="list-group-item text-center" style="background-color:#ACA7E6;"><i
                                 class="fa-solid fa-pen-to-square" style="font-size:1.2rem; cursor:pointer;"></i></li>
@@ -242,5 +258,4 @@
         </aside>
     </div>
 </body>
-
 </html>

@@ -2,104 +2,100 @@
 <html lang="sv">
 
 <head>
-  <meta charset="utf-8">
-  <title>Logga in</title>
-  <!-- Bootstrap libraries. -->
-  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../assets/css/all.min.css">
-  <!-- Favicon. -->
-  <link rel="icon" type="image/x-icon" href="../images/logo.svg">
-  <!-- CSS stylesheet. -->
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <!-- Poppins font family. -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <!-- Greycliff font family. -->
-  <link rel="stylesheet" href="https://use.typekit.net/anl1bwo.css">
-  <!-- Temporary internal stylesheet. -->
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/leader-line.min.js"></script>
-  <script src="assets/js/bootstrap.bundle.js"></script>
-  <script src="assets/js/back-to-top.js"></script>
-
+    <meta charset="utf-8">
+    <title>Logga in - Pluggportalen</title>
+    <!-- Bootstrap libraries. -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+    <!-- Favicon. -->
+    <link rel="icon" type="image/x-icon" href="../images/logo.svg">
+    <!-- CSS stylesheet. -->
+    <link rel="stylesheet" href="../assets/css/style.css?">
+    <!-- Poppins font family. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Greycliff font family. -->
+    <link rel="stylesheet" href="https://use.typekit.net/anl1bwo.css">
+    <!-- Temporary internal stylesheet. -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/leader-line.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/back-to-top.js"></script>
 </head>
 
 <body class="backround-login">
     <header>
         <div class="d-flex justify-content-between">
-        <a href="../index.html"><img src="../images/logo.svg" class="logo-login mt-4 ms-4" height="100" alt="logo"></a>
-</div>
-
-    </header>
-
-    <main >
-
-<div class="modal modal-sheet position-static d-block" tabindex="-1" role="dialog" id="modalSignin">
-    <div class="modal-dialog mt-0" role="document">
-      <div class="modal-content rounded-4 shadow">
-          <h1 class="fw-bold mb-4 text-center" style="font-size: 22pt;">Logga in</h1>
-        <div class="modal-body p-5 pt-0">
-          <form action="login.php" method="post">
-            <div class="mb-3">
-              <label for="email" class="form-label ms-2">E-post</label>
-              <input type="email" class="form-control rounded-5" id="email" name=email>
-            </div>
-            <div class="mb-3">
-              <label for="password" class="form-label ms-2">Lösenord</label>
-              <input type="password" class="form-control rounded-5" id="password" name=password>
-            </div>
-            
-            <div class="mx-auto p-2" style="width: 15rem;">
-            <button class="text-white w-100 mb-3 mt-3 btn-lg rounded-5 btn btn-lightblue" type="submit" name="login"><i class="fa-solid fa-right-to-bracket me-2"></i>Logga in</button>
-            </div>
-            </form>
-
-            <a href="#" class="dropdown-item text-center">Glömt lösenord?</a>
-
-            <div class="row mb-4">
-              <div class="col mt-5" style="border-top: 1px solid rgb(255, 255, 255);"></div>
-              <div class="col mt-5 ">
-                  <h2 class="or text-center">eller</h2>
-              </div>
-              <div class="col mt-5" style="border-top: 1px solid rgb(255, 255, 255);"></div>
-          </div>
-          
-          <div class="mx-auto p-2" style="width: 20rem;">
-            <a href="register.html" class="text-white w-100 py-2 mb-3 btn btn-orange rounded-5" style="max-width: 20rem;">
-              Registrera dig</a>
-            <button class="w-100 py-2 mb-3 btn btn-secondary_login rounded-5" style="max-width: 20rem;" type="submit"><i class="fa-brands fa-facebook mx-1"></i>
-              Logga in med Facebook
-            </button>
-            <button class="btn btn-secondary_login w-100 py-2 mb-2 rounded-5" style="max-width: 20rem;" type="submit"><i class="fa-brands fa-google mx-1"></i>
-              Logga in med Google
-            </button>
-          </div>
+            <a href="../index.html"><img src="../images/logo.svg" class="logo-login mt-4 ms-4" height="100"
+                    alt="logo"></a>
         </div>
-      </div>
-    </div>
-  </div>
+    </header>
+    <main>
+        <!--Form for log in user-->
+        <div class="modal modal-sheet position-static d-block" tabindex="-1" role="dialog" id="modalSignin">
+            <div class="modal-dialog mt-0" role="document">
+                <div class="modal-content rounded-4 shadow">
+                    <h1 class="fw-bold mb-4 text-center" style="font-size: 22pt;">Logga in</h1>
+                    <div class="modal-body p-5 pt-0">
+                        <form action="login.html" method="post">
+                            <div class="mb-3">
+                                <label for="email" class="form-label ms-2">E-post</label>
+                                <input type="email" class="form-control rounded-5" id="email" name=email>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label ms-2">Lösenord</label>
+                                <input type="password" class="form-control rounded-5" id="password" name=password>
+                            </div>
+                            <div class="mx-auto p-2" style="width: 15rem;">
+                                <button class="text-white w-100 mb-3 mt-3 btn-lg rounded-5 btn btn-lightblue"
+                                    type="submit" name="login"><i class="fa-solid fa-right-to-bracket me-2"></i>Logga
+                                    in</button>
+                            </div>
+                        </form>
+                                                <a href="#" class="dropdown-item text-center">Glömt lösenord?</a>
 
-  <div class="foot container text-center">
-    <div class="row">
-    <div class="col">
-    <ul>
-      <li>© Copyright 2024</li>
-      <li><a href="#"> Användaravtal</a></li>
-      <li><a href="#"> Sekretesspolicy</a></li>
-      <li><a href="#"> Skicka feedback</a></li>
-    </ul>
-  </div>
-  </div>
-</div>
-  
-  
+                        <div class="row mb-4">
+                            <div class="col mt-5" style="border-top: 1px solid rgb(255, 255, 255);"></div>
+                            <div class="col mt-5 ">
+                                <h2 class="or text-center">eller</h2>
+                            </div>
+                            <div class="col mt-5" style="border-top: 1px solid rgb(255, 255, 255);"></div>
+                        </div>
+
+                        <div class="mx-auto p-2" style="width: 20rem;">
+                            <a href="register.html" class="text-white w-100 py-2 mb-3 btn btn-orange rounded-5"
+                                style="max-width: 20rem;">
+                                Registrera dig</a>
+                            <button class="w-100 py-2 mb-3 btn btn-secondary_login rounded-5" style="max-width: 20rem;"
+                                type="submit"><i class="fa-brands fa-facebook mx-1"></i>
+                                Logga in med Facebook
+                            </button>
+                            <button class="btn btn-secondary_login w-100 py-2 mb-2 rounded-5" style="max-width: 20rem;"
+                                type="submit"><i class="fa-brands fa-google mx-1"></i>
+                                Logga in med Google
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Links under form-->
+        <div class="foot container text-center">
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li>© Copyright 2024</li>
+                        <li><a href="#"> Användaravtal</a></li>
+                        <li><a href="#"> Sekretesspolicy</a></li>
+                        <li><a href="#"> Skicka feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </main>
-
-
-  </body>
+</body>
 
 </html>

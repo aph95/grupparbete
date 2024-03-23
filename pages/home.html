@@ -16,13 +16,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <!-- Greycliff font family. -->
     <link rel="stylesheet" href="https://use.typekit.net/anl1bwo.css">
 </head>
 
 <body class="body-logged-in-bg">
+    <!--Banner-->
     <header>
         <div>
             <div class="banner py-2 px-4">
@@ -37,18 +38,22 @@
                     </span>
                 </i>
                 <div class="d-flex flex-column mb-3">
-                    <div><a class="btn btn-darkblue btn-sm mt-3 mb-1 ms-3" href="../index.html"><i
-                                class="fa-solid fa-right-from-bracket me-1"></i>Logga ut</a></div>
+                    <form action="../assets/functions/logout.html" method="post">
+                        <div class="login-button"><button type="submit"
+                                class="btn btn-darkblue btn-sm mt-3 mb-1 ms-3"><i
+                                    class="fa-solid fa-right-from-bracket me-1"></i>Logga ut</button></div>
+                    </form>
                     <div class="online mt-3"><span class="badge text-bg-dark fw-light"><span
-                                class="logged-in me-1">●</span>859
+                                class="logged-in-ellipsis me-1">●</span>859
                             elever
-                            online</span></div>
+                            online</span>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
     <div class="row g-0">
-        <!-- Navigation -->
+        <!-- Navigation-->
         <nav class="navbar-logged-in col-1 sidebar" style="width:7rem;">
             <div class="sticky-top">
                 <ul class="nav flex-column mt-4">
@@ -121,7 +126,6 @@
                         <a href="#">
                             <div class="shuffle-button">
                                 <span class="shuffle-btn-gradient"><i class="fa-solid fa-shuffle py-4 px-4"></i></span>
-                                <!--NEW: padding på knapp -->
                             </div>
                         </a>
                     </div>
@@ -129,7 +133,6 @@
                         <p>Tryck på knappen för att matcha med en student
                             som har liknande intressen och erfarenheter!</p>
                     </div>
-                    <!--NEW: align-items-center -->
                     <div class="container" style="margin-left:.1rem;">
                         <div class="row align-items-center">
                             <div class="col mt-5" style="border-top: 2px solid black;"></div>
@@ -140,10 +143,11 @@
                             <div class="col mt-5" style="border-top: 2px solid black;"></div>
                         </div>
                     </div>
-
-                    <div class="text-center fw-bold fs-5 mt-2">Lägg till vänner</div>
+                    <!--Friend suggestions-->
+                    <div class="text-start mt-2">
+                        <h4 class="fw-bold">Lägg till vänner</h4>
+                    </div>
                 </div>
-                <!--NEW-->
                 <div class="container">
                     <div class="row mt-4">
                         <div class="col">
@@ -162,46 +166,47 @@
             </div>
             <div class="container">
                 <div class="row mt-3">
-                    <div class="col">
+                    <div class="col home-col">
                         <a href="alice.html">
-                        <div class="card">
-                            <img src="../images/user_image_1.webp" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title fw-bold">Alice Svensson, 21 <span class="logged-in me-1">●</span>
-                                </h5>
-                                <p class="card-text"><i class="fa-solid fa-location-dot"></i> Uppsala</p>
-                                <p class="card-text mb-3"><i class="fa-solid fa-graduation-cap"></i> Beteendevetenskap
-                                </p>
-                                <div class="position-absolute bottom-0 end-0 m-1"><i
-                                        class="fa-solid fa-user-plus justify-content-end ms-4"></i></div>
+                            <div class="card">
+                                <img src="../images/user_image_2.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-title fw-bold">Alice Svensson, 21 <span
+                                            class="logged-in m-1">●</span>
+                                    </p>
+                                    <p class="card-text"><i class="fa-solid fa-location-dot"></i> Uppsala</p>
+                                    <p class="card-text mb-3"><i class="fa-solid fa-graduation-cap"></i>
+                                        Beteendevetenskap
+                                    </p>
+                                    <div class="position-absolute bottom-0 end-0 m-1"><i
+                                            class="fa-solid fa-user-plus justify-content-end me-2"></i></div>
+                                </div>
                             </div>
-                        </div>
                         </a>
                     </div>
                     <div class="col">
                         <div class="card homeprofileimage">
                             <img src="../images/user_image_9.webp" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title fw-bold">Lennox Tuomainen, 22 <span
-                                        class="logged-in me-1">●</span>
-                                </h5>
+                                <p class="card-title fw-bold">Lennox Tuomainen, 22 <span class="logged-in m-1">●</span>
+                                </p>
                                 <p class="card-text"><i class="fa-solid fa-location-dot"></i> Lund</p>
                                 <p class="card-text mb-3"><i class="fa-solid fa-graduation-cap"></i> Speldesign</p>
                                 <div class="position-absolute bottom-0 end-0 m-1"><i
-                                        class="fa-solid fa-user-plus justify-content-end ms-4"></i></div>
+                                        class="fa-solid fa-user-plus justify-content-end me-2"></i></div>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card homeprofileimage">
-                            <img src="../images/user_image_2.webp" class="card-img-top" alt="...">
+                            <img src="../images/user_image_1.webp" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title fw-bold">Selda Valdez, 31 <span class="logged-in me-1">●</span>
-                                </h5>
+                                <p class="card-title fw-bold">Selda Valdez, 31 <span class="logged-in m-1">●</span>
+                                </p>
                                 <p class="card-text"><i class="fa-solid fa-location-dot"></i> Falun</p>
                                 <p class="card-text mb-3"><i class="fa-solid fa-graduation-cap"></i> Lärarprogrammet</p>
                                 <div class="position-absolute bottom-0 end-0 m-1"><i
-                                        class="fa-solid fa-user-plus justify-content-end ms-4"></i></div>
+                                        class="fa-solid fa-user-plus justify-content-end me-2"></i></div>
                             </div>
                         </div>
                     </div>
@@ -209,13 +214,13 @@
                         <div class="card homeprofileimage">
                             <img src="../images/user_image_8.webp" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title fw-bold">Rachel Hua, 45 <span class="logged-in me-1">●</span>
-                                </h5>
+                                <p class="card-title fw-bold">Rachel Hua, 45 <span class="logged-in m-1">●</span>
+                                </p>
                                 <p class="card-text"><i class="fa-solid fa-location-dot"></i> Malmö</p>
                                 <p class="card-text mb-3"><i class="fa-solid fa-graduation-cap"></i>
                                     Fastighet och finans</p>
                                 <div class="position-absolute bottom-0 end-0 m-1"><i
-                                        class="fa-solid fa-user-plus justify-content-end ms-4"></i></div>
+                                        class="fa-solid fa-user-plus justify-content-end me-2"></i></div>
                             </div>
                         </div>
                     </div>
@@ -223,12 +228,12 @@
                         <div class="card homeprofileimage">
                             <img src="../images/user_image_3.webp" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title fw-bold">Tamlin Chen, 35 <span class="logged-in me-1">●</span>
-                                </h5>
+                                <p class="card-title fw-bold">Tamlin Chen, 35 <span class="logged-in m-1">●</span>
+                                </p>
                                 <p class="card-text"><i class="fa-solid fa-location-dot"></i> Skövde</p>
                                 <p class="card-text mb-3"><i class="fa-solid fa-graduation-cap"></i> Data Science</p>
                                 <div class="position-absolute bottom-0 end-0 m-1"><i
-                                        class="fa-solid fa-user-plus justify-content-end ms-4"></i></div>
+                                        class="fa-solid fa-user-plus justify-content-end me-2"></i></div>
                             </div>
                         </div>
                     </div>
@@ -238,12 +243,12 @@
                         <div class="card homeprofileimage">
                             <img src="../images/user_image_4.webp" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title fw-bold">Mathilda Renman, 38 <span class="logged-in me-1">●</span>
-                                </h5>
+                                <p class="card-title fw-bold">Mathilda Renman, 38 <span class="logged-in m-1">●</span>
+                                </p>
                                 <p class="card-text"><i class="fa-solid fa-location-dot"></i> Göteborg</p>
                                 <p class="card-text mb-3"><i class="fa-solid fa-graduation-cap"></i> Design - master</p>
                                 <div class="position-absolute bottom-0 end-0 m-1"><i
-                                        class="fa-solid fa-user-plus justify-content-end ms-4"></i></div>
+                                        class="fa-solid fa-user-plus justify-content-end me-2"></i></div>
                             </div>
                         </div>
                     </div>
@@ -251,13 +256,13 @@
                         <div class="card homeprofileimage">
                             <img src="../images/user_image_5.webp" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title fw-bold">Noomi Rindzeviciute, 35 <span
-                                        class="logged-in me-1">●</span>
-                                </h5>
+                                <p class="card-title fw-bold">Noomi Rindzeviciute, 35 <span
+                                        class="logged-in m-1">●</span>
+                                </p>
                                 <p class="card-text"><i class="fa-solid fa-location-dot"></i> Stockholm</p>
                                 <p class="card-text mb-3"><i class="fa-solid fa-graduation-cap"></i> Textildesign</p>
                                 <div class="position-absolute bottom-0 end-0 m-1"><i
-                                        class="fa-solid fa-user-plus justify-content-end ms-4"></i></div>
+                                        class="fa-solid fa-user-plus justify-content-end me-2"></i></div>
                             </div>
                         </div>
                     </div>
@@ -265,12 +270,12 @@
                         <div class="card homeprofileimage">
                             <img src="../images/user_image_6.webp" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title fw-bold">Joel Lindberg, 47 <span class="logged-in me-1">●</span>
-                                </h5>
+                                <p class="card-title fw-bold">Joel Lindberg, 47 <span class="logged-in m-1">●</span>
+                                </p>
                                 <p class="card-text"><i class="fa-solid fa-location-dot"></i> Luleå</p>
                                 <p class="card-text mb-3"><i class="fa-solid fa-graduation-cap"></i> Läkarprogrammet</p>
                                 <div class="position-absolute bottom-0 end-0 m-1"><i
-                                        class="fa-solid fa-user-plus justify-content-end ms-4"></i></div>
+                                        class="fa-solid fa-user-plus justify-content-end me-2"></i></div>
                             </div>
                         </div>
                     </div>
@@ -278,12 +283,12 @@
                         <div class="card homeprofileimage">
                             <img src="../images/user_image_7.webp" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title fw-bold">Anders Svensk, 35 <span class="logged-in me-1">●</span>
-                                </h5>
+                                <p class="card-title fw-bold">Anders Svensk, 35 <span class="logged-in m-1">●</span>
+                                </p>
                                 <p class="card-text"><i class="fa-solid fa-location-dot"></i> Stockholm</p>
                                 <p class="card-text mb-3"><i class="fa-solid fa-graduation-cap"></i> Digital Design</p>
                                 <div class="position-absolute bottom-0 end-0 m-1"><i
-                                        class="fa-solid fa-user-plus justify-content-end ms-4"></i></div>
+                                        class="fa-solid fa-user-plus justify-content-end me-2"></i></div>
                             </div>
                         </div>
                     </div>
@@ -291,21 +296,22 @@
                         <div class="card homeprofileimage">
                             <img src="../images/user_image_10.webp" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title fw-bold">Ali Ellan, 42 <span class="logged-in me-1">●</span>
-                                </h5>
+                                <p class="card-title fw-bold">Ali Ellan, 42 <span class="logged-in m-1">●</span>
+                                </p>
                                 <p class="card-text"><i class="fa-solid fa-location-dot"></i> Kristianstad</p>
                                 <p class="card-text mb-3"><i class="fa-solid fa-graduation-cap"></i> Specialpedagogik
                                 </p>
                                 <div class="position-absolute bottom-0 end-0 m-1"><i
-                                        class="fa-solid fa-user-plus justify-content-end ms-4"></i></div>
+                                        class="fa-solid fa-user-plus justify-content-end me-2"></i></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-        <!-- Aside -->
+        <!-- Aside-->
         <aside class="aside-logged-in col-2">
+            <!--Friends-->
             <div class="sticky-top">
                 <div class="card mt-4 mx-auto" style="width: 10rem;">
                     <div class="card-header" style="background-color: #2B274D; color:white;">
@@ -318,27 +324,31 @@
                                 class="fa-solid fa-ellipsis" style="font-size:1.2rem; cursor:pointer;"></i></li>
                     </ul>
                 </div>
-                <!-- PHP FOR CALENDAR TO BE ADDED -->
+                <!--Calendar-->
                 <div class="card mt-4 mx-auto" style="width: 10rem;">
                     <div class="card-header" style="background-color: #2B274D; color:white;">
-                        <p class="text-center"><i class="fa-solid fa-calendar-days me-1"></i>Kalender</p>
+                        <p class="text-center mb-1"><i class="fa-solid fa-calendar-days me-1"></i>Kalender</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item text-center">...</li>
+                        <li class="list-group-item text-center">
+                            Inget planerat                        </li>
                         <li class="list-group-item text-center pb-4" style="background-color:#ACA7E6;"></li>
                     </ul>
                 </div>
+                <!--Study goals-->
                 <div class="card mt-4 mx-auto" style="width: 10rem;">
                     <div class="card-header" style="background-color: #2B274D; color:white;">
                         <p class="text-center"><i class="fa-solid fa-graduation-cap me-1"></i>Pluggmål</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item "><input class="form-check-input me-1" type="checkbox">Läsa PHP (Faraon)</li>
+                        <li class="list-group-item "><input class="form-check-input me-1" type="checkbox">Läsa PHP
+                            (Faraon)</li>
                         <li class="list-group-item"><input class="form-check-input me-1" type="checkbox">Skriva rapport
                         </li>
                         <li class="list-group-item"><input class="form-check-input me-1" type="checkbox">Designprojekt
                         </li>
-                        <li class="list-group-item"><input class="form-check-input me-1" type="checkbox">PHP intensivkurs
+                        <li class="list-group-item"><input class="form-check-input me-1" type="checkbox">PHP
+                            intensivkurs
                         </li>
                         <li class="list-group-item text-center" style="background-color:#ACA7E6;"><i
                                 class="fa-solid fa-pen-to-square" style="font-size:1.2rem; cursor:pointer;"></i></li>
